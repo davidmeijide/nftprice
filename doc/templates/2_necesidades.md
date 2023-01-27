@@ -1,75 +1,77 @@
-# ESTUDO DE NECESIDADES E MODELO DE NEGOCIO
+﻿
 
-## Xustificación das necesidades detectadas que cubre o sistema a desenvolver
-1.	Describe o problema ou a necesidade.
-2.	Por que é necesaria a posta en marcha dun proxecto que aborde dita necesidade?
-3.	Cal é o obxectivo xeral que persegue o proxecto?
-4.	Responde a estas preguntas concretas:
+# Estudio de necesidades y modelo de negocio
 
-    4.1.Como se pode responder a esta necesidade? 
-    
-    4.2. Que pode facerse para cambiar este estado de cousas? 
-    
-    4.3. Como podemos contribuír desde a nosa situación a que o problema se resolva? 
-    
-    4.4. Que medios, actividades e recursos van poñer en xogo? 
-    
-    4.5. Que actividades se van realizar? 
-    
-    4.6. Que metodoloxía se vai empregar para levar a cabo o traballo?
-    
-    4.7. Que persoas serían precisas para realizar o proxecto con éxito? 
-    
-    4.8 Con canto tempo se conta? 
-    
-    4.9 Canto tempo se necesita?
+## Justificación de las necesidades detectadas
 
-## Posibilidades de comercialización (viabilidade, competidores…).
-1.	Viabilidade.
+La necesidad de crear una herramienta para monitorear fluctuaciones de precios en NFTs se debe a la creciente popularidad y aceptación de estos activos digitales. Con cada vez más personas interesadas en adquirir o invertir en NFTs, también crece el público objetivo.
 
-    1.1	Viabilidade técnica.
-    
-        1.1.a) Será posible dispoñer dos recursos humanos e medios de produción necesarios (materias primas, maquinaria, instalacións…)?
-        
-        1.1.b) Existe algún impedimento técnico que dificulte o proceso produtivo?
-        
-    1.2	Viabilidade económica
-    
-        1.2.a) Os beneficios do proyecto son superiores aos costes?
-        
-        1.2.b) As perdas poden cubrirse vía financiamento (por parte da administración pública, con subvencións, etc)?
+Hay una ausencia de opciones en este ámbito, y es necesario ofrecer a la comunidad de las criptomonedas una herramienta con esta utilidad.
 
-        
-2.	Competencia.
+Para responder a esta necesidad, se debe crear una herramienta accesible para todos los usuarios, fácil de usar, que proporcione la información necesaria para un inversor de NFT’s. Es decir, los precios y el volumen de ventas.
 
-    2.1. Identificación da competencia, as súas características e a súa posición no mercado.
-    
-    2.2. Existencia de productos/servizos substitutivos.
+**El proyecto expuesto aquí tiene en cuenta los atributos y rarezas de los NFT’s a la hora de colocar las alertas. Esto supone un mayor desafío técnico, pero es importante para diferenciarse en el mercado**
 
-## Ideas para a súa comercialización.
-1.	Promoción.
+En pocas horas, un token no fungible puede pasar de valer todo a nada o lo contrario, por eso es importante tener alertas enviadas al *Telegram* del usuario.
 
-    1.1.	Técnicas elixidas (redes sociais, plataformas multimedia, páxina web, posicionamento web SEO, patrocinios, participación en eventos, prácticas de responsabilidade social corporativa, outras).
-    
-    1.2.	Xustifica a elección.
-    
-2.	Modelo de negocio.
+## Recursos
 
-    2.1.Modelo elixido (Modelo de pago / Freemium (é de balde pero as funcionalidades extras son de pago) / In house (desenvolvementos a medida para contornos empresariais / De subscrición / Por publicidade / Outros)
-    
-    2.2. Xustifica a elección.
+Los recursos necesarios para poder desarrollar la aplicación son pequeños. No se necesita comprar ninguna licencia (ya que se utilizan lenguajes y programas de código abierto) ni un medio físico, solamente montar un servidor propio, o pagar por un hosting en la nube y un nombre de dominio.
 
-# Webgrafía
+También hay que tener en cuenta las **horas de trabajo** del desarrollador. Una persona podría terminarlo en alrededor de un mes siempre que tenga los conocimientos asentados. En caso contrario, se prolongaría al doble.
 
-Xustificación de necesidades, viabilidade:
+## Metodología
+La metodología usada será incremental. Se busca una forma más tradicional para trabajar por la ausencia de una necesidad de publicar de manera periódica nuevas versiones. Las actualizaciones serán significativas en cuanto a nuevos cambios y mejoras.
 
-**Guía para a elaboración de proyectos. Gobierno Vasco.**
+Se cuenta con alrededor de dos meses para plantear y desarrollar la web, lo que hace posible el cumplimiento de los objetivos mínimos planteados anteriormente en este documento.
 
-https://www.pluralismoyconvivencia.es/upload/19/71/guia_elaboracion_proyectos_c.pdf  (páxina 26 e seguintes)
+## Posibilidades de comercialización 
+### Viabilidad técnica
 
-Competencia:
+El programador tiene conocimientos suficientes para llevar a cabo el proyecto, ya que utiliza tecnologías aprendidas en su educación en el grado superior de Desarrollo de Aplicaciones Web.
 
-**Modelo de plan de negocios. Empresa de servicios informáticos. IGAPE**
+### Viabilidad económica y modelo de negocio
 
-http://www.igape.es/images/crear-unha-empresa/Recursos/PlansdeNegocio/16ServiciosInformaticos12_5_cas.pdf 
-(páxina 45 e seguintes)
+La monetización vendría en una comisión para los usuarios que hagan uso de la herramienta “*sniper*”. Su utilidad es comprar el NFT automáticamente, antes de lo que podría hacerlo cualquier humano.
+
+Esta compra tendría una comisión de entre el 1% y el 5%. Dicha sección del programa es de una complejidad muy alta por la integración con la blockchain o cadena de bloques de Solana. Esto requiere crear un contrato inteligente en Rust y una depuración exhaustiva al tratarse de grandes sumas de dinero, por lo que es posible que no se incluya en el entregable.
+
+Con unos ingresos de 100 dólares estadounidenses al mes, sería suficiente como para pagar el hosting y mantener el dominio.
+
+## Competencia
+Existen varias opciones de competencia similares.
+- [https://www.solsniper.xyz/ -](https://www.solsniper.xyz/) Es el servicio más similar al del proyecto, pero no permite escoger los atributos deseados.
+- [https://raritysniper.com/ ](https://raritysniper.com/)- Se centra en el ecosistema Ethereum, no en el de Solana como es el caso presentado.
+- [solset.io ](https://solset.io/)- Requiere la compra de un NFT para acceder a los servicios.
+
+## Comercialización 
+### Promoción
+
+La única red social que junta a toda la comunidad NFT es twitter.com. El idioma por defecto es el inglés y en alguna ocasión el español.
+
+Para ganar afluencia, sería necesario crear una cuenta de empresa y entrar en *cryptotwitter* participando y enseñando a usar la herramienta a los posibles clientes.
+
+La importancia de tener un *community manager* a día de hoy es enorme y sería una opción a considerar una vez se acabase de desarrollar la web.
+
+## Bibliografía
+
+1. Solset. (s.f.). En <https://solset.io/>
+1. Solsniper. (s.f.). En <https://www.solsniper.xyz/>
+1. Raritysniper. (s.f.). En <https://raritysniper.com/>
+
+
+### Conceptos relevantes utilizados
+
+1. Telegram: una aplicación de mensajería instantánea similar a WhatsApp.
+1. Discord: una plataforma de comunicación en línea para juegos y comunidades digitales.
+1. Generación milenial: la generación de personas nacidas entre 1981 y 1996.
+1. Generación Z: la generación de personas nacidas entre 1997 y 2012.
+1. Generación X: la generación de personas nacidas entre 1965 y 1980.
+1. Volatilidad: la medida de la tendencia a fluctuar de los precios de un activo financiero.
+1. API (Application Programming Interface): un conjunto de reglas y protocolos que permiten a diferentes programas interactuar entre sí.
+1. MySQL: un sistema de gestión de bases de datos relacional de código abierto.
+1. PHP: un lenguaje de programación de servidor utilizado para desarrollar sitios web dinámicos.
+1. JavaScript: un lenguaje de programación de cliente utilizado para agregar interactividad a sitios web.
+1. CSS (Cascading Style Sheets): un lenguaje de diseño utilizado para definir el estilo visual de un documento HTML.
+1. Apache2: un servidor web de código abierto utilizado para ejecutar sitios web en un servidor.
+5
