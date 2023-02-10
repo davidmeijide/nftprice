@@ -1,12 +1,8 @@
 # FASE DE DESEÑO
 
-## Modelo conceptual do dominio da aplicación e/ou Diagrama de clases [usando UML, ConML, ou linguaxe semellante].
+## Diagrama de Base de Datos.
 
-![Diagrama de arquitectura](doc/img/diagrama_arquitectura.png)
-
-## Casos de uso [descritos en fichas e/ou mediante esquemas; deben incluír o(s) tipo(s) de usuario implicados en cada caso de uso].
-
-
+![Diagrama Entidad-Relación](doc/img/diagrama_ER.png)
 
 ## Deseño de interface de usuarios [mockups ou diagramas...].
 
@@ -22,9 +18,6 @@ Pinchando en la pestaña "Portfolio", se puede acceder a la cartera del usuario 
 
 ![Mockup de la pantalla de 'cartera'](doc/img/interfaz_portfolio.png)
 
-## Diagrama de Base de Datos.
-
-![Diagrama Entidad-Relación](doc/img/diagrama_ER.png)
-
 ## Diagrama de compoñentes software que constitúen o produto e de despregue.
+![Diagrama de arquitectura](doc/img/diagrama_arquitectura.png)
 
