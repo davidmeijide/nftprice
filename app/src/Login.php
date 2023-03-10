@@ -103,7 +103,7 @@ class Login{
             return false;
 
         } elseif ($_POST['user_password_new'] != $_POST['user_password_repeat']) {
-            $this->errors[] = "Password and password repeat are not the same";
+            $this->errors[] = "Passwords do not match";
             return false;
 
         }

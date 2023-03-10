@@ -35,10 +35,6 @@ td i{
 .bg-yellow{
     background-color: lightyellow;
 }
-#logout{
-    margin: 30px;
-    background-color: lightblue;
-}
 h1{
     margin: 30px;
 }
@@ -99,4 +95,10 @@ input {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
+.error{
+  color: red;
+}
 
+.dropdown-menu a{
+  text-decoration: none;
+}

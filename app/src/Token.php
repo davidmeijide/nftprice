@@ -138,7 +138,7 @@ class Token{
             $tokens = array_merge($tokens,$rawData);
             $offset+=20;
             $lastCount = count($rawData);
-            sleep(0.5);
+            sleep(0.55);
         }
 
         return $tokens;

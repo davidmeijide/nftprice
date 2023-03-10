@@ -19,7 +19,19 @@ if(isset($_POST['register'])){
     /* print_r($login); */
     if($login->validateRegister() == true){
         $login->register();
-        header('Location: login.html');
+        $login = new Login(htmlspecialchars($_POST['username']),htmlspecialchars($_POST['user_password_new']),"");
+        //User and password validation pending
+        if($login->login()==true) header('Location: home.php');
+        else{
+            /* print_r($login->errors); */
+            header('Location: login.html'); 
+        } 
+    }
+    else{
+        $_SESSION['errors'] = $login->errors;
+        include('../view/registerView.php');
+        //header('Location: register.html');
+
     }
 
 }
