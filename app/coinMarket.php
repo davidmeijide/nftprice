@@ -11,7 +11,7 @@ $parameters = [
 
 $headers = [
   'Accepts: application/json',
-  "X-CMC_PRO_API_KEY: $CMC_KEY"
+  "X-CMC_PRO_API_KEY: $CMC_API_KEY"
 ];
 $qs = http_build_query($parameters); // query string encode the parameters
 $request = "{$url}?{$qs}"; // create the request URL

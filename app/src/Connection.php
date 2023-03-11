@@ -1,21 +1,17 @@
 <?php
 
 class Connection extends PDO{
-
-    private $db, $host, $user, $pass, $dsn;
     
+    private $dsn;
     public function __construct()
     {
-        include_once('../private/config.php');
-        $this->db = $DB_NAME;
-        $this->host = $DB_HOST;
-        $this->user = $DB_USER;
-        $this->pass = $DB_PASSWORD;
+        define('__ROOT__', dirname(dirname(__FILE__)));
+        require_once(__ROOT__.'/private/config.php');
 
 
-        $this->dsn = "mysql:host={$this->host};dbname={$this->db};charset=utf8mb4";
+        $this->dsn = "mysql:host={$DB_HOST};dbname={$DB_NAME};charset=utf8mb4";
         try{
-            parent::__construct($this->dsn,$this->user,$this->pass);
+            parent::__construct($this->dsn,$DB_USER,$DB_PASSWORD);
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(PDOException $e){
