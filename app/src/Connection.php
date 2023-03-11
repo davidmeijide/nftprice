@@ -1,13 +1,18 @@
 <?php
-class Connection extends PDO{
-    private $host = "db-pdo";
-    private $db = "mebot";
-    private $user = "root";
-    private $pass = "root";
-    private $dsn;
 
+class Connection extends PDO{
+
+    private $db, $host, $user, $pass, $dsn;
+    
     public function __construct()
     {
+        include_once('../private/config.php');
+        $this->db = $DB_NAME;
+        $this->host = $DB_HOST;
+        $this->user = $DB_USER;
+        $this->pass = $DB_PASSWORD;
+
+
         $this->dsn = "mysql:host={$this->host};dbname={$this->db};charset=utf8mb4";
         try{
             parent::__construct($this->dsn,$this->user,$this->pass);

@@ -1,5 +1,7 @@
 
 <?php
+
+include_once('private/API_KEYS.php');
 $url = 'https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
 $parameters = [
   'start' => '1',
@@ -9,7 +11,7 @@ $parameters = [
 
 $headers = [
   'Accepts: application/json',
-  'X-CMC_PRO_API_KEY: 425b0c4f-416d-40e0-afe3-cd3e989997f3'
+  "X-CMC_PRO_API_KEY: $CMC_KEY"
 ];
 $qs = http_build_query($parameters); // query string encode the parameters
 $request = "{$url}?{$qs}"; // create the request URL
