@@ -165,9 +165,11 @@ function renderFloor(json){
             e.preventDefault()
             if(linked == false){
                 modal1.show()
-            } 
-            wlSubmit()
-            document.querySelector('#watchlist-form-container').remove()
+            }
+            if(isFormEmpty(watchlist_form) == false){
+                wlSubmit()
+                document.querySelector('#watchlist-form-container').remove()
+            }
         })
         cancel.addEventListener('click',e=>{
             e.preventDefault()
@@ -1017,6 +1019,8 @@ function isTelegramLinked(){
 
         if(text == true){
             alert_success.classList.remove("d-none")
+            alert_warning.classList.add("d-none")
+
             linked = true
         }
         else if(text == false){
@@ -1040,3 +1044,18 @@ function sendTestAlert(){
     .then(text=>console.log(text))
 }
 
+function isFormEmpty(form) {
+    // get all the inputs within the submitted form
+    let inputs = form.getElementsByTagName('input');
+    for (let i = 0; i < inputs.length; i++) {
+        // only validate the inputs that have the required attribute
+        if(inputs[i].hasAttribute("required")){
+            if(inputs[i].value == ""){
+                // found an empty field that is required
+                alert("Please fill all required fields");
+                return true;
+            }
+        }
+    }
+    return false;
+}
