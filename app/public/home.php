@@ -4,7 +4,10 @@ include_once('../src/WatchList.php');
 include_once('../src/Portfolio.php');
 include_once('../src/Collection.php');
 include_once('../view/homeView.php');
+
 @session_start();
+
+
 
 if(!isset($_SESSION['username'])){
     header('Location: login.html');    
