@@ -22,7 +22,7 @@ function showHead()
 
     <body>
         <header class="container mw-50 d-flex justify-content-between mb-0">
-            <h1 class="ms-0">NFTtrack</h1>
+            <h1 class="ms-0">NFTprice</h1>
             <div class="d-flex align-items-center">
                 <div class="d-flex justify-content-between">
                 </div>
