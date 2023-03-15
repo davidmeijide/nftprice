@@ -10,7 +10,7 @@ include_once('../view/homeView.php');
 
 
 if(!isset($_SESSION['username'])){
-    header('Location: login.html');    
+    header('Location: login.php');    
 }
 elseif(isset($_POST['active'])){
     $bot = new Bot();

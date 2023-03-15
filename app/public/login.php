@@ -1,38 +1,30 @@
-<?php
-include_once('../src/Bot.php');
-include_once('../src/Login.php');
-$bot = new Bot("");
-//Login
-if(isset($_POST['login'])){
-    $login = new Login(htmlspecialchars($_POST['username']),htmlspecialchars($_POST['password']),"");
-    //User and password validation pending
-    if($login->login()==true) header('Location: home.php');
-    else{
-        /* print_r($login->errors); */
-        header('Location: login.html'); 
-    } 
-    
-}
-if(isset($_POST['register'])){
-    //User and password validation
-    $login = new Login(trim(htmlspecialchars($_POST['username'])),htmlspecialchars($_POST['user_password_new']),trim(htmlspecialchars($_POST['email'])));
-    /* print_r($login); */
-    if($login->validateRegister() == true){
-        $login->register();
-        $login = new Login(htmlspecialchars($_POST['username']),htmlspecialchars($_POST['user_password_new']),"");
-        //User and password validation pending
-        if($login->login()==true) header('Location: home.php');
-        else{
-            /* print_r($login->errors); */
-            header('Location: login.html'); 
-        } 
-    }
-    else{
-        $_SESSION['errors'] = $login->errors;
-        include('../view/registerView.php');
-        //header('Location: register.html');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NFTtrack</h1>
+    </header>
+    <div class="d-flex container-sm flex-column">
+        <form class="form-group m-auto container-sm" action="auth.php" method="post">
+        <h2>Log in</h2>
+        <label for="username">Username</label>
+        <input class="form-control" type="text" name="username" id="username" required><br>
 
-    }
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password" id="password" required><br>
 
-}
+        <button class="btn btn-info mb-2" name="login" value="login">Login</button>
+        <p class="">Not registered? <a class="ml-2" href="register.php">Register</a></p>
+    </form>
+    </div>
+</body>
 
+</html>
