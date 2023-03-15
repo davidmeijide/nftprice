@@ -6,10 +6,10 @@ $bot = new Bot("");
 if(isset($_POST['login'])){
     $login = new Login(htmlspecialchars($_POST['username']),htmlspecialchars($_POST['password']),"");
     //User and password validation pending
-    if($login->login()==true) header('Location: home.php');
+    if($login->login()==true) header('Location: /public/home.php');
     else{
         /* print_r($login->errors); */
-        header('Location: login.php'); 
+        header('Location: /public/login.php'); 
     } 
     
 }
@@ -21,10 +21,10 @@ if(isset($_POST['register'])){
         $login->register();
         $login = new Login(htmlspecialchars($_POST['username']),htmlspecialchars($_POST['user_password_new']),"");
         //User and password validation pending
-        if($login->login()==true) header('Location: home.php');
+        if($login->login()==true) header('Location: /public/home.php');
         else{
             /* print_r($login->errors); */
-            header('Location: login.php'); 
+            header('Location: /public/login.php'); 
         } 
     }
     else{

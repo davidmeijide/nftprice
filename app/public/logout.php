@@ -9,4 +9,4 @@ if(isset($_COOKIE['username'])){
 @session_unset();
 @session_destroy();
 
-header('Location: login.php');    
+header('Location: /public/login.php');    
