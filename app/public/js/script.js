@@ -71,7 +71,7 @@ function getCollections(symbol){
     if(symbol){
         //If DB symbol does not exist, api call
         ajax({
-            url: '../searchCollection.php',
+            url: '/public/searchCollection',
             method: 'POST',
             success: json => {
                 renderFloor(json)
@@ -93,7 +93,7 @@ function getCollections(symbol){
 }
 
 function insertCollection(symbol){
-    let url = "../public/home.php"
+    let url = "/public/home"
     let formData = new FormData();
     formData.append('insertCollection', true);
     formData.append('symbol', symbol);
@@ -231,7 +231,7 @@ function addWatchListEvents(){
 
 function changeAlertState(id, state){
 
-    var url = '../public/home.php';
+    var url = '/public/home';
     var formData = new FormData();
     formData.append('id_alert', id);
     formData.append('active', state);
@@ -248,7 +248,7 @@ function changeAlertState(id, state){
 }
 
 function getWatchList(){
-    var url = '../public/home.php';
+    var url = '/public/home';
     var formData = new FormData();
     formData.append('getWatchList', true);
     
@@ -263,7 +263,7 @@ function getWatchList(){
 //WatchList update event
 
 function addAlert(symbol){
-    var url = '../public/home.php';
+    var url = '/public/home';
     var formData = new FormData();
     formData.append('addAlert', true);
     formData.append('symbol', symbol);
@@ -297,7 +297,7 @@ function renderWatchListBody(json){
         const actions = clone.querySelector('.actions')
         const buttons = clone.querySelectorAll('button')
 
-        var url = '../searchCollection.php';
+        var url = '/public/searchCollection';
         fetch(url, { 
             method: 'POST', 
             body: JSON.stringify({'symbol': element.symbol}), 
@@ -310,6 +310,7 @@ function renderWatchListBody(json){
             a.textContent = json.name
             
         })
+        .catch(error => console.log(error))
         floor_price.textContent = (parseFloat(element.floorPrice)/1000000000).toFixed(2)
         a.href = `https://magiceden.io/marketplace/${element.symbol}`
         alert_price.value = element.floor_price
@@ -409,7 +410,7 @@ function showWatchList(){
 }
 
 function setAlertPrice(id_alert, alert_price){
-    let url = '../public/home.php';
+    let url = '/public/home';
     let formData = new FormData();
     formData.append('setAlertPrice', true);
     formData.append('id_alert', id_alert);
@@ -427,7 +428,7 @@ function setAlertPrice(id_alert, alert_price){
 }
 
 function removeAlert(id_alert){
-    let url = '../public/home.php';
+    let url = '/public/home';
     let formData = new FormData();
     formData.append('removeAlert', true);
     formData.append('id_alert', id_alert);
@@ -480,7 +481,7 @@ nav.addEventListener('click',e=>{
 })
 
 function getPortfolio(){
-    var url = '../public/home.php';
+    var url = '/public/home';
     var formData = new FormData();
     formData.append('getPortfolio', true);
     
@@ -493,7 +494,7 @@ function getPortfolio(){
 } 
 
 /* function showPortfolio(){
-    let url = '../public/home.php';
+    let url = '/public/home';
     let formData = new FormData();
     formData.append('showPortfolio', true);
     
@@ -533,7 +534,7 @@ function renderPortfolio(json){
 
         actions.dataset.id = element.id_portfolio
 
-        const  url = '../searchCollection.php';
+        const  url = '/public/searchCollection';
         fetch(url, { 
             method: 'POST', 
             body: JSON.stringify({'symbol': element.symbol}), 
@@ -550,7 +551,7 @@ function renderPortfolio(json){
             currency.textContent = `\$${element.currency.toUpperCase()}`
             amount.textContent = element.amount_owned
             //Currency request
-            let cmc_url = '../src/getCoinUSD.php';
+            let cmc_url = '/src/getCoinUSD';
             let formData = new FormData();
             formData.append('currency', element.currency.toUpperCase());
             fetch(cmc_url, { 
@@ -622,7 +623,7 @@ function fillPortfolioForm(json){
 
 
 function addToPortfolio(form){
-    const url = '../public/home.php'
+    const url = '/public/home'
     const formData = new FormData(form)
     formData.append('addToPortFolio',true)
     formData.append('currency','SOL')
@@ -635,7 +636,7 @@ function addToPortfolio(form){
 }
 
 function removeItem(id_portfolio){
-    const url = '../public/home.php'
+    const url = '/public/home'
     const formData = new FormData()
     formData.append('removeItem',true)
     formData.append('id_portfolio',id_portfolio)
@@ -647,10 +648,10 @@ function removeItem(id_portfolio){
     .then(text=>console.log(text))
 }
 async function getTopCollections(){
-    const url = '../public/home.php'
+    const url = '/public/home'
     const formData = new FormData()
     formData.append('getTopCollections',true)
-    const response = await fetch('../public/home.php', {
+    const response = await fetch('/public/home', {
                 method: 'POST',
                 body: formData, 
             });
@@ -681,7 +682,7 @@ function autocomplete(inp, arr) {
         a.setAttribute("class", "autocomplete-items");
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
-        /*for each item in the array...*/
+        /*for each item in the array.*/
         for (i = 0; i < arr.length; i++) {
           /*check if the item starts with the same letters as the text field value:*/
           if (arr[i][0].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
@@ -824,7 +825,7 @@ function renderAttributeSelect(json){
 }
 
 function getAttributeTypes(symbol){
-    var url = '../public/home.php';
+    var url = '/public/home';
     var formData = new FormData();
     formData.append('getAttributeTypes', true);
     formData.append('symbol', symbol);
@@ -838,7 +839,7 @@ function getAttributeTypes(symbol){
 }
 
 function getAttributeValues(id_trait, dataset_id){
-    var url = '../public/home.php';
+    var url = '/public/home';
     var formData = new FormData();
     formData.append('getAttributeValues', true);
     formData.append('id_trait', id_trait);
@@ -897,7 +898,7 @@ function wlSubmit(){
     })
     formData.append('attributes', JSON.stringify(attributes))
 
-    let url = "../public/home.php"
+    let url = "/public/home"
     fetch(url, { 
         method: 'POST', 
         body: formData, 
@@ -911,7 +912,7 @@ function wlSubmit(){
 }
 
 function processUpdates(){
-    const url = '../public/home.php';
+    const url = '/public/home';
     let formData = new FormData();
     formData.append('processUpdates', true);    
     fetch(url, { 
@@ -923,7 +924,7 @@ function processUpdates(){
 }
 
 function linkTelegram(telegram_id){
-    const url = '../public/home.php';
+    const url = '/public/home';
     let formData = new FormData();
     const submit = document.querySelector('#submit-tid')
     const icon = submit.querySelector('.spinner-border')
@@ -1006,7 +1007,7 @@ function addModalEvents(){
 }
 
 function isTelegramLinked(){
-    const url = '../public/home.php';
+    const url = '/public/home';
     let formData = new FormData();
     formData.append("isTelegramLinked",true)
     fetch(url,{
@@ -1033,7 +1034,7 @@ function isTelegramLinked(){
 }
 
 function sendTestAlert(){
-    const url = '../public/home.php';
+    const url = '/public/home';
     let formData = new FormData();
     formData.append("sendTestAlert",true)
     fetch(url,{

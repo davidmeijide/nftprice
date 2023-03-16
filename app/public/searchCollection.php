@@ -1,8 +1,6 @@
 <?php
-include_once('src/Connection.php');
-include_once('src/Collection.php');
-
-
+include_once('../src/Connection.php');
+include_once('../src/Collection.php');
 
 
 $datos= json_decode(file_get_contents('php://input'),true);
@@ -18,7 +16,7 @@ $pdoStatement->bindParam(':symbol',$symbol);
 $pdoStatement->execute();
 if($pdoStatement->rowCount()>0){
     $data = $pdoStatement->fetch(PDO::FETCH_ASSOC);
-    $data['image']= "../img/collections/".$data['image'];
+    $data['image']= "/public/img/collections/".$data['image'];
     echo json_encode($data);
 }
 else{

@@ -13,7 +13,7 @@
         <h1>NFTtrack</h1>
     </header>
     <div class="d-flex container-sm flex-column">
-        <form class="form-group m-auto container-sm" action="/public/auth.php" method="post">
+        <form class="form-group m-auto container-sm" action="/auth" method="post">
         <h2>Log in</h2>
         <label for="username">Username</label>
         <input class="form-control" type="text" name="username" id="username" required><br>
@@ -22,7 +22,7 @@
         <input class="form-control" type="password" name="password" id="password" required><br>
 
         <button class="btn btn-info mb-2" name="login" value="login">Login</button>
-        <p class="">Not registered? <a class="ml-2" href="/public/register.php">Register</a></p>
+        <p class="">Not registered? <a class="ml-2" href="/register">Register</a></p>
     </form>
     </div>
 </body>
