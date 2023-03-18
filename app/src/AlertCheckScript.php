@@ -1,9 +1,11 @@
 <?php
 include_once('./Bot.php');
+include_once('./WatchList.php');
 
 
 function checkWatchList($watchList, $telegram_id){
     $bot = new Bot();
+    $w = new WatchList("");
     //print_r($watchList);
     $desired_token = $bot->checkCollectionDB($watchList->symbol, $watchList->floor_price, $watchList->compare,$watchList->token_traits);
     print_r($desired_token);
@@ -13,6 +15,9 @@ function checkWatchList($watchList, $telegram_id){
     $formated_attributes = str_replace(",", "", $formated_attributes);
     
     if($desired_token){
+        // If conditions are met, set alert as inactive
+        $w->deactivateAlert($watchList->id_alert);
+        // Send the Telegram message
         $bot->sendMessage($telegram_id, "
         Your alert on <b>$watchList->symbol</b> has hit your desired floor price (". $watchList->floor_price/1000000000 ." $watchList->currency)
     • Current price: ". $desired_token->price/1000000000 ." $watchList->currency.
