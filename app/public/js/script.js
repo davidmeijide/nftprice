@@ -313,10 +313,10 @@ function renderWatchListBody(json){
         .catch(error => console.log(error))
         floor_price.textContent = (parseFloat(element.floorPrice)/1000000000).toFixed(2)
         a.href = `https://magiceden.io/marketplace/${element.symbol}`
-        alert_price.value = element.floor_price
-        const attr_json = JSON.parse(element.token_traits);
+        alert_price.value = (parseFloat(element.floor_price)/1000000000).toFixed(2)
+        const attr_json = element.token_traits.split(',');
 
-
+        console.log(attr_json);
         for (const item of attr_json) {
             let type = (item.slice(0,item.lastIndexOf('_')))
             type = type.slice(type.lastIndexOf('_')+1)

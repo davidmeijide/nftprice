@@ -192,7 +192,7 @@ class Collection{
                     array_push($paramArrayValues, $value_id, $id_trait,$attribute['value']);
                     array_push($attr_values, $value_id);
                 }
-                array_push($paramArrayTokenInfo, $token['mint'], $symbol, $token['name'],$token['rank'],json_encode($attr_values));
+                array_push($paramArrayTokenInfo, $token['mint'], $symbol, $token['name'],$token['rank'],(implode(",",$attr_values)));
                 
             }
 

@@ -177,36 +177,74 @@ class Bot{
         $this->sendMessage($result['telegram_id'], "This is a test message. Your Telegram is correctly linked!");
     }
 
-    public function checkCollection2($symbol, $alertPrice, $compare, $attributes){
-        $symbol = str_replace(" ","_",$symbol);
+
+
+    function array_equal($a, $b){
+        return count($a) === count($b) && empty(array_diff($a, $b)) && empty(array_diff($b, $a));
+        }
+    
+
+    public function checkCollectionDB($symbol, $alertPrice, $compare, $attributes){
         $connection = new Connection();
-        $compareSign = $compare=="lower"?"<=":">=";
-        $minmax = $compare=="lower"?"MIN":"MAX";
-        $query = "SELECT :minmax(price) FROM listed_tokens
-                    WHERE fk_symbol_listed LIKE :symbol
-                    AND listed = 1
-                    AND :alert_price :compare price
-                    AND token_traits LIKE :attributes";
-                    
-        $pdoStatement = $connection->prepare($query);
-        $pdoStatement->bindParam(":minmax",$minmax);
+
+        // Turn the attributes string from the DB into an array
+        $attributes = explode(",",$attributes);
+
+        // Iterate though attributes and add FIND_IN_SET as many times as attribute array length.
+        $attributes_search_query= '';
+        $i=0;
+        foreach($attributes as $attribute_id){
+            if($i++==0){
+                $attributes_search_query .= "FIND_IN_SET('$attribute_id', token_traits)>0";
+                continue;
+            }
+            $attributes_search_query .= " AND FIND_IN_SET('$attribute_id', token_traits)>0";
+        }
+        
+        $queryLower = "SELECT * FROM listed_tokens 
+                        WHERE price IS NOT NULL
+                        AND fk_symbol_listed LIKE :symbol
+                        AND listed = 1
+                        AND (price < :alert_price)
+                        AND (
+                                $attributes_search_query
+                        )
+                        ORDER BY price ASC 
+                        LIMIT 1";
+        
+        //echo $queryLower;
+
+        $queryGreater = "SELECT * FROM listed_tokens 
+                        WHERE price IS NOT NULL
+                        AND fk_symbol_listed LIKE :symbol
+                        AND listed = 1
+                        AND (price > :alert_price)
+                        AND (
+                                $attributes_search_query
+                        )
+                        ORDER BY price ASC 
+                        LIMIT 1";
+
+        // Choose query based on lower or greater than price
+        if($compare=='lower'){
+            $pdoStatement = $connection->prepare($queryLower);
+        }else{
+             $pdoStatement = $connection->prepare($queryGreater);
+        }
+        
         $pdoStatement->bindParam(":symbol",$symbol);
         $pdoStatement->bindParam(":alert_price",$alertPrice);
-        $pdoStatement->bindParam(":compare",$compareSign);
-        $attributes = "%.$attributes.%";
-        $pdoStatement->bindParam(":attributes",$attributes);
+
         $pdoStatement->execute();
-        $floorPrice = $pdoStatement->fetchAll(PDO::FETCH_OBJ);
-        
+        return $pdoStatement->fetch(PDO::FETCH_OBJ);
+    }
 
-
-        
-        if($compare == 'lower' && $floorPrice<=$alertPrice){
-            return $floorPrice;
-        } 
-        elseif($compare == 'greater' && $floorPrice>=$alertPrice) return $floorPrice;
-        else return false;
-    
+    function getTelegramId($username){
+        $connection = new Connection();
+        $pdoStatement = $connection->prepare("SELECT telegram_id FROM users WHERE username LIKE :username");
+        $pdoStatement->bindParam(":username",$username);
+        $pdoStatement->execute();
+        return ($pdoStatement->fetch(PDO::FETCH_OBJ)->telegram_id);
     }
 
 

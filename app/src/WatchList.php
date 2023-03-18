@@ -45,9 +45,12 @@ class WatchList{
             $pdoStatement->bindParam(':fk_username',$_SESSION['username']);
             $pdoStatement->bindParam(':active',$active);
             $pdoStatement->bindParam(':compare',$compare);
+            $price = $price * 1000000000;
             $pdoStatement->bindParam(':floor_price',$price);
             $pdoStatement->bindParam(':expiry_date',$expiry_date);
             $pdoStatement->bindParam(':currency',$currency);
+
+            $attributes = implode(",",json_decode($attributes));
             $pdoStatement->bindParam(':token_traits',$attributes);
             
             $pdoStatement->execute();
