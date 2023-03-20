@@ -29,28 +29,8 @@ class Token{
             die('Error at token select query: '.$e->getMessage());
         }
     }
-    public function updateTokenInfo($address, $price, $owner=null){
-        try{            
-            $connection = new Connection();
-            //Set all tokens to unlisted.
-            $preQuery = $connection->query("UPDATE listed_tokens SET listed = 0");
-            $preQuery->execute();
-            $pdoStatement = $connection->prepare("UPDATE listed_tokens SET
-                                                owner = :owner, price = :price, listed = 1
-                                                WHERE token_id LIKE :token_id");
-            $pdoStatement->bindParam(':token_id', $address);
-            $pdoStatement->bindParam(':owner', $owner);
-            $pdoStatement->bindParam(':price', $price);
 
-            $pdoStatement->execute();
-            return true;
-        }
-        catch(PDOException $e){
-            die('Error at token update: '.$e->getMessage());
-        }  
-    }
-
-    public function updateTokenInfo2($data){
+    public function updateTokenInfo($data){
         try{            
             $connection = new Connection();
             $pdoStatement = $connection->prepare("UPDATE listed_tokens SET

@@ -312,28 +312,16 @@ class Collection{
 
         $howRareAlias = array_keys($collection->apiGetAllMeAlias(),$symbol)[0];
         $collection->insertMeAlias($symbol,$howRareAlias);
-
         $allAtributes = $collection->apiGetAllAttributes($howRareAlias);
-        $time_apiGetAllAttributes = microtime(true);
-    
         $token->setToUnlistedAll($symbol);
-        $time_setToUnlistedAll = microtime(true);
         
         if($allAtributes == false) return false;
         else{
             $collection->insertTypes($symbol,$allAtributes);
-            $time_insertTypes = microtime(true);
-    
             $collection->insertAllAttributes($symbol,$allAtributes);
-            $time_insertAllAttributes = microtime(true);
-    
         }
-    
         $listedTokens = $token->apiGetListedTokens($symbol);
-        $time_apiGetListedTokens = microtime(true);
-    
-        $token->updateTokenInfo2($listedTokens);
-        $time_updateTokenInfo2 = microtime(true);
+        $token->updateTokenInfo($listedTokens);
         return true;
         
     }

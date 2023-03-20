@@ -1,8 +1,8 @@
 <?php
-include_once('../src/Bot.php');
 
 function showHead()
 {
+    require('../private/config.php');
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -11,18 +11,20 @@ function showHead()
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Floor price tracker</title>
+        <title>NFTprice - Home</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
         <script src="js/script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
 
     <body>
         <header class="container mw-50 d-flex justify-content-between mb-0">
-            <h1 class="ms-0">NFTprice</h1>
+            <a class="text-decoration-none" href="/home"><h1 class="ms-0 text-dark">NFTprice</h1></a>
             <div class="d-flex align-items-center">
                 <div class="d-flex justify-content-between">
                 </div>
@@ -52,7 +54,7 @@ function showHead()
             </div>
             <div class="container alert alert-success d-flex justify-content-between d-none" id="linked-success">
                 <p class="align-middle m-0">
-                    You will revieve your alerts to your Telegram.
+                    You will recieve your alerts to your Telegram.
                     <a id="send-test-alert" class="alert-link" href="#">Send a test alert</a>
                 </p>
 

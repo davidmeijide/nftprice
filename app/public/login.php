@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>NFTtrack</h1>
+        <h1>NFTprice</h1>
     </header>
     <div class="d-flex container-sm flex-column">
         <form class="form-group m-auto container-sm" action="/auth" method="post">

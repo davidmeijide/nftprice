@@ -14,11 +14,14 @@ $pdoStatement = $connection->prepare("SELECT fk_symbol_listed AS symbol, name, d
                                     ON collections.symbol = floorPriceCalc.fk_symbol_listed");
 $pdoStatement->bindParam(':symbol',$symbol);
 $pdoStatement->execute();
+
+// If collection in database
 if($pdoStatement->rowCount()>0){
     $data = $pdoStatement->fetch(PDO::FETCH_ASSOC);
     $data['image']= "/public/img/collections/".$data['image'];
     echo json_encode($data);
 }
+// Collection not in database
 else{
     $url = "https://api-mainnet.magiceden.dev/v2/collections/$symbol";
     $httpOptions = [
@@ -44,7 +47,7 @@ else{
         $rawData['listedCount'],
         array_key_exists('avgPrice24hr',$rawData)?$rawData['avgPrice24hr']:"",
         $rawData['volumeAll']);
-
+        
     $rawData['justInserted'] = true;
     echo json_encode($rawData);
 

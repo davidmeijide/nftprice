@@ -33,8 +33,8 @@ foreach($watchLists as $alert){
     $listedTokens = $token->apiGetListedTokens($alert['symbol']);
     $times[$alert['symbol']." | time_apiGetListedTokens"] = microtime(true);
 
-    $token->updateTokenInfo2($listedTokens);
-    $times[$alert['symbol']." | updateTokenInfo2"] = microtime(true);
+    $token->updateTokenInfo($listedTokens);
+    $times[$alert['symbol']." | updateTokenInfo"] = microtime(true);
 
     $collection->updateCollectionInfo($alert['symbol'],$collection_info['listedCount'],$collection_info['totalVolume'],$collection_info['avgPrice24hr'],$last_update);
     $times[$alert['symbol']." | updateCollectionInfo"] = microtime(true);
@@ -47,4 +47,4 @@ echo "<br> End: ".round(microtime(true) - $time_start,2);
 
 /* echo "<br> Loop 1: time_setToUnlistedAll: ". $time_setToUnlistedAll?$time_setToUnlistedAll:0 - $time_start; */
 /* echo "<br> Loop 1: time_apiGetListedTokens: ". $time_apiGetListedTokens?$time_apiGetListedTokens:0 - $time_start;
-echo "<br> Loop 2: time_updateTokenInfo2: ". $time_updateTokenInfo2?$time_updateTokenInfo2:0 - $time_start; */
+echo "<br> Loop 2: time_updateTokenInfo: ". $time_updateTokenInfo?$time_updateTokenInfo:0 - $time_start; */

@@ -42,8 +42,8 @@ foreach($watchLists as $alert){
     $listedTokens = $token->apiGetListedTokens($alert['symbol']);
     $time_apiGetListedTokens = microtime(true);
 
-    $token->updateTokenInfo2($listedTokens);
-    $time_updateTokenInfo2 = microtime(true);
+    $token->updateTokenInfo($listedTokens);
+    $time_updateTokenInfo = microtime(true);
     
 } 
 

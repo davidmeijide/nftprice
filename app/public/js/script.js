@@ -81,8 +81,6 @@ function getCollections(symbol){
                 else{
                     //TO-DO Create a popup message
                 }
-                
-  
             },
             error: msg => console.log(msg),
             data: {
@@ -108,26 +106,6 @@ function insertCollection(symbol){
     });
 
 }
-/* insertCollection('y00ts'); */
-
-/* function renderCollections(json){
-    collections.innerHTML = "";
-    const fragment = document.createDocumentFragment()
-    json.forEach(element =>{
-        const clone = template_collections.cloneNode(true)
-        const title = clone.querySelector('#collection-name')
-        const img = clone.querySelector('img')
-        const description = clone.querySelector('p')
-        const a = clone.querySelector('a')
-
-        title.textContent = element.name
-        img.src = element.image
-        description.textContent = element.description
-        a.href = `https://magiceden.io/marketplace/${element.symbol}`
-        fragment.appendChild(clone)
-    })
-    collections.appendChild(fragment)
-} */
 
 function renderFloor(json){
     const clone = template_floor.cloneNode(true)
