@@ -17,11 +17,24 @@
 Firewall activado con los puertos 443 (https), 80 (http) y 22 (SSH) abiertos.
 Permisos de grupo y usuario sobre el código para el grupo www-data. 
 
-* Carga inicial de datos na base de datos. Migración de datos xa existentes noutros formatos.
-* Usuarios do sistema. Usuarios da aplicación.
-* Diagrama final de despregue (se hai variacións con respecto ó realizado na anterior fase).
+* Carga inicial de datos en la base de datos:
+    - En la carpeta `/app/sql/` ejecutar el archivo `nftprice-db.migration.sql`.
+    - Comprobar que se está usando la base de datos correcta `USE nftprice`. 
 
-### Información relativa á administración do sistema, é dicir, tarefas que se deberán realizar unha vez que o sistema estea funcionando, como por exemplo:
+* Usuarios del sistema: usuario local sudoer.
+* Usuarios de la aplicación: todos tienen categoría 'user'. Se deja el campo creado para ampliaciones futuras.
+
+### Automatización de las inserciones a la base de datos
+
+Para mantener una imagen fiel de la realidad en nuestra aplicación, necesitamos hacer peticiones periódicas a las APIs.
+Utilizaremos CRON para programar la ejecución del script.
+
+Justo después de actualizar la base de datos, se comprueba si se ha cumplido alguna alerta y se envían los mensajes neesarios.
+Estos scripts generan logs, que se pueden ver en la carpeta /app/logs/.
+
+Para asegurarnos de que se ejecuten secuencialmente (1º `updateScript.php`, 2º `AlertCheckScript.php`), ejecutaremos las órdenes desde un script en bash.
+
+### Administración del sistema
 
 * Copias de seguridad de la base de datos:
 
