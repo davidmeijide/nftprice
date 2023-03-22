@@ -106,7 +106,12 @@ class Collection{
 
     public function storeImage($src, $target, $newwidth, $newheight){
         try{
-            $img = file_get_contents($src);
+
+            $httpOptions = ["ssl"=>array(
+                "verify_peer"=>false,
+                "verify_peer_name"=>false,
+            )];
+            $img = file_get_contents($src, false, stream_context_create($httpOptions));
             $im = imagecreatefromstring($img);
             $width = imagesx($im);
             $height = imagesy($im);
