@@ -21,7 +21,7 @@ function checkWatchList($watchList, $telegram_id){
     • Current price: ". $desired_token->price/1000000000 ." $watchList->currency.
     • Attributes selected: $formated_attributes
     • <a href='https://magiceden.io/item-details/$desired_token->token_id'>$desired_token->name</a> is the cheapest NFT with the selected attributes");
-    $time = date("Y-m-d h:i:sa");
+    $time = date("Y-m-d h:i:s");
     echo "[$time] Sent message to $telegram_id - $desired_token->name | Price set:". $watchList->floor_price/1000000000 ." - token price: ". $desired_token->price/1000000000 ."\n";
     }
     

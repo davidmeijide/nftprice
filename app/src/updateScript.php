@@ -13,8 +13,8 @@ $watchLists = json_decode($bot->getAllDistinctWatchLists(),true);
 
 $token = new Token("","","","","");
 $collection = new Collection("");
-$time = date("Y-m-d h:i:sa");
-$logScript = "";
+$time = date("Y-m-d h:i:s");
+$log = [];
 
 foreach($watchLists as $alert){
     $collection_info = $collection->getCollectionInfo($alert['symbol'])[0];
@@ -23,35 +23,30 @@ foreach($watchLists as $alert){
 
     $date_difference = $last_update->diff($date_now);
 
-    $logScript .= '['.$time.'] Last '.$alert['symbol'].' update was '.$date_difference->i.' minute(s) ago. \n';
+    array_push($log , '['.$time.'] Last '.$alert['symbol'].' update was '.$date_difference->i.' minute(s) ago.');
     if($date_difference->i<3){
-        $logScript .= 'Not updating.\n'; 
+        array_push($log, 'Not updating'); 
         continue; //API CALL INTERVAL. IF >3 MIN -> UPDATE (IN MINUTES)
     } 
-    $logScript .= 'Updating...\n';
+    array_push($log, '['.date("Y-m-d h:i:s").'] Updating...');
     $token->setToUnlistedAll($alert['symbol']);
-    /* $time_setToUnlistedAll = microtime(true); */
 
     $listedTokens = $token->apiGetListedTokens($alert['symbol']);
-    // $times[$alert['symbol']." | time_apiGetListedTokens"] = microtime(true);
-    $logScript .= '['.$time.'] apiGetListedTokens\n';
+    array_push($log, '['.date("Y-m-d h:i:s").'] apiGetListedTokens');
     $token->updateTokenInfo($listedTokens);
-    //$times[$alert['symbol']." | updateTokenInfo"] = microtime(true);
-    $logScript .= '['.$time.'] updateTokenInfo\n';
+    array_push($log, '['.date("Y-m-d h:i:s").'] updateTokenInfo');
 
 
     $collection->updateCollectionInfo($alert['symbol'],$collection_info['listedCount'],$collection_info['totalVolume'],$collection_info['avgPrice24hr'],$last_update);
     //$times[$alert['symbol']." | updateCollectionInfo"] = microtime(true);
-    $logScript .= '['.$time.'] updateCollectionInfo\n';
+    array_push($log, '['.date("Y-m-d h:i:s").'] updateCollectionInfo');
 } 
-/* foreach($times as $name => $time){
-    echo $name.": ".round($time-$time_start,3)." seconds.<br>";
-} */
 
-$logScript .= "Finished updating. Seconds: ".round(microtime(true) - $time_start,2). "\n";
+array_push($log , "[".date("Y-m-d h:i:s")."] Finished updating. Seconds: ".round(microtime(true) - $time_start,2));
 
-echo $logScript;
+$watchLists? $log : $log[0] = '['.date("Y-m-d h:i:s").'] No active watchlists to update. Skipping...';
 
-/* echo "<br> Loop 1: time_setToUnlistedAll: ". $time_setToUnlistedAll?$time_setToUnlistedAll:0 - $time_start; */
-/* echo "<br> Loop 1: time_apiGetListedTokens: ". $time_apiGetListedTokens?$time_apiGetListedTokens:0 - $time_start;
-echo "<br> Loop 2: time_updateTokenInfo: ". $time_updateTokenInfo?$time_updateTokenInfo:0 - $time_start; */
+foreach($log as $line){
+    echo $line ."\n";
+}
+

@@ -1,5 +1,5 @@
 /app/cmc_key
 /app/img/collections/
 /app/private/
-/app/.htaccess
+/app/.htaccess*
 /app/logs/*
