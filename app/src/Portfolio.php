@@ -40,8 +40,6 @@ class Portfolio{
     }
 
     public function getCoinUSD($currency){
-        $currency = $_POST['currency'];
-
         $url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest';
         $parameters = [
             'symbol' => $currency,
