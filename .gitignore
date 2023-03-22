@@ -1,5 +1,6 @@
-/app/cmc_key
-/app/img/collections/
+/app/public/img/collections/
 /app/private/
 /app/.htaccess*
-/app/logs/*
+/app/logs/*.log
+/app/logs/alertCheckScript.log
+/app/logs/updateScript.log
