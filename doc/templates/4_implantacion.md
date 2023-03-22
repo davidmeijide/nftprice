@@ -47,8 +47,7 @@ Ahora con crontab programamos su ejecución cada 1 minuto:
 ```
 */1 * * * * /var/www/html/run_scripts.sh > /proc/1/fd/1 2>/proc/1/fd/2
 ```
-
-
+Para ver los logs, `docker logs nftprice-server`
 
 
 
