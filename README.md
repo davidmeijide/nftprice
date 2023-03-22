@@ -7,6 +7,7 @@ NFTprice es una herramienta que envía mensajes via Telegram cuando un NFT llega
 [NFTprice.app](https:/nftprice.app/)
 
 Puedes probar la aplicación buscando "degods" en el buscador una vez te registres.
+También puedes buscar una colección de [magiceden](https://magiceden.io/) y pegar directamente el enlace en el buscador.
 
 Está automatizada hasta el punto de que cuando un usuario busca una colección que no está en la base de datos, se inserta la nueva colección. A partir de ahí todos los usuarios tendrán un acceso más instantáneo y sugerido en la búsqueda.
 

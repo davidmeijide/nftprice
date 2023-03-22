@@ -119,7 +119,7 @@ function renderFloor(json){
     const addToWatchList = clone.querySelector('.addToWatchlist')
 
     name.textContent = json.name
-    listed.textContent = `Listed: ${json.listedCount}`
+    listed.textContent = `Listed: ${json.listedCount}` || ""
     if(json.avgPrice24hr){
         avg.textContent = `Average price: ${parseFloat(json.avgPrice24hr/1000000000).toFixed(2)} ◎` 
     }
@@ -129,7 +129,7 @@ function renderFloor(json){
     volume.textContent = `Total volume: ${parseFloat(json.totalVolume/1000000000).toFixed(2)} ◎` || ""
     description.textContent = json.description
     floor.innerHTML = `Floor price: <mark>${parseFloat(json.floorPrice/1000000000).toFixed(2)} ◎</mark>` || ""
-    img.src = json.image
+    img.src = json.image || ""
     
     collections.innerHTML=""
     floor_section.innerHTML=""
