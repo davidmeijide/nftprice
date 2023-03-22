@@ -29,30 +29,23 @@ function showHead()
                 <div class="d-flex justify-content-between">
                 </div>
                 <div class="dropdown">
-                    <button class="btn btn-secondary bg-transparent" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="text-black me-2">Profile</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person text-black" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="#"><button class="dropdown-item" type="button">Profile</button></a></li>
-                        <li><a href="#"><button class="dropdown-item" type="button">Settings</button></a></li>
-                        <li><a class="" href="logout.php"><button id="logout" class="dropdown-item">Log out</button></a></li>
-                    </ul>
+                <a class="" href="logout.php">
+                    <button class="btn btn-secondary bg-transparent text-dark" type="button">Logout</button>
+                    </a>
+
                 </div>
 
             </div>
         </header>
-        <nav class="container mw-50">
-            <div class="alert alert-warning d-none" id="linked-warning">
+        <nav class="container-md mw-50">
+            <div class="container-fluid alert alert-warning d-none" id="linked-warning">
                 <h5 class="">Telegram not linked</h5>
                 <p class="align-middle m-0">
                     We will alert you if any NFT in your watchlist reaches the set price.
                     <a class="alert-link" href="#">Recieve price alerts in your Telegram</a>
                 </p>
             </div>
-            <div class="container alert alert-success d-flex justify-content-between d-none" id="linked-success">
+            <div class="container-fluid alert alert-success d-md-flex justify-content-between d-none" id="linked-success">
                 <p class="align-middle m-0">
                     You will recieve your alerts to your Telegram.
                     <a id="send-test-alert" class="alert-link" href="#">Send a test alert</a>
@@ -72,7 +65,7 @@ function showHead()
                 <li class="nav-item"><a id="portfolio-link" class="nav-link" href="#">Portfolio</a></li>
             </ul>
         </nav>
-        <div id="main-container" class="container mw-50">
+        <div id="main-container" class="container-md mw-50">
 
         </div>
 
@@ -83,8 +76,8 @@ function showHead()
 function showSearch()
 {
     ?>
-        <div id="secondary-container" class="container d-flex inline-flex mb-5 p-3">
-            <div class="w-50 me-4" id="left-secondary">
+        <div id="secondary-container" class="container-lg d-lg-flex mb-5 p-3">
+            <div class="container-md mw-50 mb-4 ps-0" id="left-secondary">
                 <h2>Find a collection</h2>
                 <section id="search">
                     <form id="form-search" class="d-inline-flex pt-3 pe-0 input-group" action="#" method="POST">
@@ -97,7 +90,7 @@ function showSearch()
                     <!-- Insert here collection template -->
                 </section>
             </div>
-            <div id="form-container" class="container-xxl w-50"></div>
+            <div id="form-container" class="container-md mw-50"></div>
         </div>
 
     </body>
@@ -118,10 +111,10 @@ function showTemplates()
                             <th>Name</th>
                             <th>Current price</th>
                             <th>Alert price</th>
-                            <th></th>
-                            <th>Currency</th>
-                            <th>Attributes</th>
-                            <th>State</th>
+                            <th class="d-none d-lg-table-cell"></th>
+                            <th class="d-none d-lg-table-cell">Currency</th>
+                            <th class="th-attributes">Attributes</th>
+                            <th class="d-none d-lg-table-cell">State</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -147,9 +140,10 @@ function showTemplates()
                     <div class="w-50 align-self-start">
                         <img src="" alt="" class="img-thumbnail mb-3">
                     </div>
-                    <div class="w-50 d-flex flex-column me-4">
+                    <div class="w-50 d-flex flex-column ms-3 me-3">
                         <p class="listed"></p>
                         <p class="volume"></p>
+                        <p class="description"></p>
                         <p class="avg-price"></p>
                         <p class="floor fw-bold mt-auto"></p>
                     </div>
@@ -167,10 +161,10 @@ function showTemplates()
         <tr class="">
             <td class=""><a class="collection-link" target="_blank" href="#"></a></td>
             <td class="floor-price"></td>
-            <td class="td-alert col-sm-2">
-                <input class="alert-price noborder p-0" type="text" name="alert-price" disabled>
+            <td class="td-alert">
+                <input class="alert-price noborder p-0 " type="text" name="alert-price" disabled>
             </td>
-            <td class="p-0">
+            <td class="p-0 d-none d-lg-table-cell">
                 <div class="icon-container">
                     <i class="edit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
@@ -184,12 +178,12 @@ function showTemplates()
                     </i>
                 </div>
             </td>
-            <td class="currency">$SOL</td>
+            <td class="currency d-none d-lg-table-cell">$SOL</td>
             <td class="attributes"></td>
-            <td class="active"></td>
+            <td class="active d-none d-lg-table-cell"></td>
             <td class="actions d-flex justify-content-end">
-                <button type="submit" name="activate" value="" class="btn btn-success m-1">Activate</button>
-                <button type="submit" name="turnOff" value="" class="btn btn-warning m-1">Turn off</button>
+                <button type="submit" name="activate" value="" class="btn btn-success m-1">On</button>
+                <button type="submit" name="turnOff" value="" class="btn btn-warning m-1">Off</button>
                 <button type="submit" name="remove" value="" class="btn btn-danger m-1">X</button>
             </td>
         </tr>
@@ -208,11 +202,6 @@ function showTemplates()
             <td class="profit"></td>
             <td class="actions d-flex justify-content-end">
                 <button type="submit" name="remove" value="" class="btn btn-danger m-1 removeItem">Remove</button>
-                <i class="edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
-                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z" />
-                    </svg>
-                </i>
                 <i class="check">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
@@ -344,6 +333,14 @@ function showTemplates()
                     <h5 id="att-title" class="mb-4">Attributes</h5>
                     <div id="attribute-group"></div>
                     <div class="d-flex justify-content-between">
+                        <a id="remove-attribute" href="#att-title" class="text-decoration-none mt-2 text-danger">
+                            <i class="icon-container">
+                                <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                                </svg>
+                            </i>
+                            Remove attribute
+                        </a>
                         <a id="add-attribute" href="#att-title" class="text-decoration-none mt-2">
                             <i class="icon-container ">
                                 <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
@@ -353,20 +350,12 @@ function showTemplates()
                             </i>
                             Add a new attribute
                         </a>
-                        <a id="remove-attribute" href="#att-title" class="text-decoration-none mt-2 text-danger">
-                            <i class="icon-container">
-                                <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
-                                </svg>
-                            </i>
-                            Remove attribute
-                        </a>
                     </div>
                 </div>
                 <input type="hidden" name="symbol" id="input-symbol-watchlist">
-                <div class="button-group mt-4">
-                    <button type="submit" id="submit-watchlist" class="btn btn-primary mb-2 mt-2" data-bs-target="#modal">Submit</button>
+                <div class="button-group mt-4 d-flex justify-content-between">
                     <button type="button" id="cancel-form" class="btn btn-danger m-2">Cancel</button>
+                    <button type="submit" id="submit-watchlist" class="btn btn-primary mb-2 mt-2" data-bs-target="#modal">Submit</button>
                 </div>
             </form>
         </div>
@@ -375,7 +364,7 @@ function showTemplates()
         <div class="attribute-element border-bottom border-secondary pb-3 mb-3">
             <div class="input-group d-flex mb-2">
                 <div class="input-group-prepend w-25">
-                    <label class="input-group-text" for="attribute-types">Attribute type</label>
+                    <label class="input-group-text" for="attribute-types">Type</label>
                 </div>
                 <select name="attribute-types" id="" class="attribute-types custom-select flex-grow-1">
                     <option value="-1">None</option>
@@ -383,7 +372,7 @@ function showTemplates()
             </div>
             <div class="input-group d-flex">
                 <div class="input-group-prepend w-25">
-                    <label class="input-group-text" for="attribute-values">Attribute value</label>
+                    <label class="input-group-text" for="attribute-values">Value</label>
                 </div>
                 <select name="attribute-values" id="" class="attribute-values custom-select flex-grow-1">
                     <option value="-1">None</option>

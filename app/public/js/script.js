@@ -70,21 +70,20 @@ form_search.addEventListener('submit',e=>{
 function getCollections(symbol){
     if(symbol){
         //If DB symbol does not exist, api call
-        ajax({
-            url: '/public/searchCollection',
-            method: 'POST',
-            success: json => {
-                renderFloor(json)
-                if(json.justInserted!=null){
-                    insertCollection(json.symbol)
-                }
-                else{
-                    //TO-DO Create a popup message
-                }
-            },
-            error: msg => console.log(msg),
-            data: {
-                symbol: symbol,
+        let url = '/public/home';
+        let formData = new FormData()
+        formData.append('searchCollection', true);
+        formData.append('symbol', symbol);
+
+        fetch(url, { 
+            method: 'POST', 
+            body: formData, 
+        })
+        .then(response=>response.json())
+        .then(json=>{
+            renderFloor(json)
+            if(json.justInserted!=null){
+                insertCollection(json.symbol)
             }
         })
     }
@@ -101,7 +100,7 @@ function insertCollection(symbol){
     })
     .then(response=>response.text())
     .then(text=>{
-        console.log(text)
+        //console.log(text)
 
     });
 
@@ -113,6 +112,7 @@ function renderFloor(json){
     const listed = clone.querySelector('.listed')
     const avg = clone.querySelector('.avg-price')
     const volume = clone.querySelector('.volume')
+    const description = clone.querySelector('.description')
     const floor = clone.querySelector('.floor')
     const img = clone.querySelector('img')
     const addToPortfolio = clone.querySelector('.addToPortfolio')
@@ -127,6 +127,7 @@ function renderFloor(json){
         avg.remove()
     }
     volume.textContent = `Total volume: ${parseFloat(json.totalVolume/1000000000).toFixed(2)} ◎` || ""
+    description.textContent = json.description
     floor.innerHTML = `Floor price: <mark>${parseFloat(json.floorPrice/1000000000).toFixed(2)} ◎</mark>` || ""
     img.src = json.image
     
@@ -275,13 +276,14 @@ function renderWatchListBody(json){
         const actions = clone.querySelector('.actions')
         const buttons = clone.querySelectorAll('button')
 
-        var url = '/public/searchCollection';
+        let url = '/public/home';
+        let formData = new FormData()
+        formData.append('searchCollection', true);
+        formData.append('symbol', element.symbol);
+
         fetch(url, { 
             method: 'POST', 
-            body: JSON.stringify({'symbol': element.symbol}), 
-            headers: {
-                'Content-Type':'application/json',
-            },
+            body: formData, 
         })
         .then(response=>response.json())
         .then(json=>{
@@ -294,14 +296,13 @@ function renderWatchListBody(json){
         alert_price.value = (parseFloat(element.floor_price)/1000000000).toFixed(2)
         const attr_json = element.token_traits.split(',');
 
-        console.log(attr_json);
         for (const item of attr_json) {
+            if(element.token_traits== "") break
             let type = (item.slice(0,item.lastIndexOf('_')))
             type = type.slice(type.lastIndexOf('_')+1)
 
             let value = (item.slice(item.lastIndexOf('_')+1))
-            
-            attributes.innerHTML += `<u>${type.replaceAll("_"," ")}</u>: ${value}<br>`
+            attributes[0] != "" ? attributes.innerHTML += `<u>${type.replaceAll("_"," ")}</u>: ${value}<br>` : ""
         }
 
         if(element.active==1){
@@ -512,16 +513,18 @@ function renderPortfolio(json){
 
         actions.dataset.id = element.id_portfolio
 
-        const  url = '/public/searchCollection';
+        let url = '/public/home';
+        let formData = new FormData()
+        formData.append('searchCollection', true);
+        formData.append('symbol', element.symbol);
+
         fetch(url, { 
             method: 'POST', 
-            body: JSON.stringify({'symbol': element.symbol}), 
-            headers: {
-                'Content-Type':'application/json',
-            },
+            body: formData, 
         })
         .then(response=>response.json())
         .then(json=>{
+            console.log(element);
             floor_price.textContent = (json.floorPrice/1000000000).toFixed(2)
             a.textContent = json.name
             a.href = `https://magiceden.io/marketplace/${element.symbol}`
@@ -529,8 +532,9 @@ function renderPortfolio(json){
             currency.textContent = `\$${element.currency.toUpperCase()}`
             amount.textContent = element.amount_owned
             //Currency request
-            let cmc_url = '/src/getCoinUSD';
+            let cmc_url = '/public/home';
             let formData = new FormData();
+            formData.append('getCoinUSD', true);
             formData.append('currency', element.currency.toUpperCase());
             fetch(cmc_url, { 
                 method: 'POST', 
@@ -643,7 +647,6 @@ async function getTopCollections(){
 
 
 function autocomplete(inp, arr) {
-    console.log(arr[0]);
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
@@ -994,7 +997,6 @@ function isTelegramLinked(){
     })
     .then(response=>response.text())
     .then(text=>{
-        console.log(text);
 
         if(text == true){
             alert_success.classList.remove("d-none")

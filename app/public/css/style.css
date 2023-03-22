@@ -19,16 +19,21 @@ nav{
     /* max-width: 1200px; */
 }
 
-.td-alert{
-    width: 10%;
-}
 td i{
     cursor:pointer;
 }
 .alert-price{
-    width: 100%;
     box-sizing: border-box;
-    margin: 0
+}
+.td-alert{
+  width: 20px;
+}
+
+.th-attributes{
+  margin-left: 20px;
+}
+.attributes{
+  margin-left: 20px;
 }
 .noborder{
     border: transparent;
@@ -56,9 +61,9 @@ h1{
 }
 
 
-#left-secondary{
+/* #left-secondary{
     width: 28%;
-}
+} */
 
 * { box-sizing: border-box; }
 

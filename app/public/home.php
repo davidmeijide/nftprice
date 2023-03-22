@@ -118,6 +118,15 @@ elseif(isset($_POST['insertCollection'])){
     $collection = new Collection("");
     echo $collection->insertScript($_POST['symbol']);
 }
+elseif(isset($_POST['getCoinUSD'])){
+    $portfolio = new Portfolio([]);
+    echo $portfolio->getCoinUSD($_POST['currency']);
+}
+
+elseif(isset($_POST['searchCollection'])){
+    $collection = new Collection("");
+    echo $collection->searchCollection($_POST['symbol']);
+}
 
 else{
     $bot = new Bot();

@@ -44,7 +44,7 @@ foreach($watchLists as $alert){
 
 array_push($log , "[".date("Y-m-d h:i:s")."] Finished updating. Seconds: ".round(microtime(true) - $time_start,2));
 
-$watchLists? $log : $log[0] = '['.date("Y-m-d h:i:s").'] No active watchlists to update. Skipping...';
+$watchLists? $log : die();
 
 foreach($log as $line){
     echo $line ."\n";
