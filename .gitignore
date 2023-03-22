@@ -2,3 +2,4 @@
 /app/img/collections/
 /app/private/
 /app/.htaccess*
+/app/logs/*.log
