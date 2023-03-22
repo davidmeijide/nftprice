@@ -118,7 +118,8 @@ class Token{
             $tokens = array_merge($tokens,$rawData);
             $offset+=20;
             $lastCount = count($rawData);
-            sleep(0.55);
+            // Wait 0.55 seconds
+            usleep(550000);
         }
 
         return $tokens;

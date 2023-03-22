@@ -32,6 +32,23 @@ Como la instalación se realizará en local, se omite la sección SSL.
 ```
 FROM toasterlint/php-apache-mysql
 RUN docker-php-ext-install pdo pdo_mysql
+
+# Instamos cron
+RUN apt update && apt install -y cron
+
+# Copiamos el archivo al contenedor
+COPY cron/scripts-cron /etc/cron.d/cron
+
+# Le damos permisos de ejecución
+RUN chmod 0644 /etc/cron.d/cron
+
+#Arrancamos el proceso
+RUN crontab /etc/cron.d/cron
+
+# Asociamos la salida a la estándar de docker para poder ver logs con 'docker logs nftprice-server -t'
+RUN ln -s /dev/stdout /var/log/cron
+RUN sed -i 's/^exec /service cron start\n\nexec /' /usr/local/bin/apache2-foreground
+
 ```
 
 3. Crea un archivo `docker-compose.yml`

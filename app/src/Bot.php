@@ -1,14 +1,14 @@
 <?php
 
+require_once('Connection.php');
 
-include_once('Connection.php');
 class Bot{
     function __construct(){
         
     }
     
     function sendMessage($chatId,$message){
-        include('../private/API_KEYS.php');
+        include(__DIR__.'/../private/API_KEYS.php');
         $url = "https://api.telegram.org/bot$TELEGRAM_API_KEY";
         $params=[
             'chat_id'=>$chatId, 
@@ -113,7 +113,13 @@ class Bot{
         $pdoStatement = $conection->prepare("SELECT * FROM alerts");
         $pdoStatement->execute();
         return json_encode($pdoStatement->fetchAll(PDO::FETCH_ASSOC));
-    
+    }
+
+    function getActiveWatchLists(){
+        $conection = new Connection();
+        $pdoStatement = $conection->prepare("SELECT * FROM alerts WHERE active = 1");
+        $pdoStatement->execute();
+        return json_encode($pdoStatement->fetchAll(PDO::FETCH_ASSOC));
     }
     //Gets all the watchlists that have a different symbol and that are active.
     //This way we know which collections to update
@@ -185,23 +191,31 @@ class Bot{
     
 
     public function checkCollectionDB($symbol, $alertPrice, $compare, $attributes){
-        $connection = new Connection();
 
-        // Turn the attributes string from the DB into an array
-        $attributes = explode(",",$attributes);
-
-        // Iterate though attributes and add FIND_IN_SET as many times as attribute array length.
-        $attributes_search_query= '';
-        $i=0;
-        foreach($attributes as $attribute_id){
-            if($i++==0){
-                $attributes_search_query .= "FIND_IN_SET('$attribute_id', token_traits)>0";
-                continue;
+        try {
+            //print_r($attributes);
+            $connection = new Connection();
+            // Turn the attributes string from the DB into an array
+            
+            if($attributes){
+                // Iterate though attributes and add FIND_IN_SET as many times as attribute array length.
+                $attributes_search_query = '';
+                $i = 0;
+                $attributes = explode(",", $attributes);
+                foreach ($attributes as $attribute_id) {
+                    if ($i++ == 0) {
+                        $attributes_search_query .= "FIND_IN_SET('$attribute_id', token_traits)>0";
+                        continue;
+                    }
+                    $attributes_search_query .= " AND FIND_IN_SET('$attribute_id', token_traits)>0";
+                }
             }
-            $attributes_search_query .= " AND FIND_IN_SET('$attribute_id', token_traits)>0";
-        }
-        
-        $queryLower = "SELECT * FROM listed_tokens 
+            else{
+                $attributes_search_query = true;
+            }
+
+
+            $queryLower = "SELECT * FROM listed_tokens 
                         WHERE price IS NOT NULL
                         AND fk_symbol_listed LIKE :symbol
                         AND listed = 1
@@ -211,10 +225,10 @@ class Bot{
                         )
                         ORDER BY price ASC 
                         LIMIT 1";
-        
-        //echo $queryLower;
 
-        $queryGreater = "SELECT * FROM listed_tokens 
+            //echo $queryLower;
+
+            $queryGreater = "SELECT * FROM listed_tokens 
                         WHERE price IS NOT NULL
                         AND fk_symbol_listed LIKE :symbol
                         AND listed = 1
@@ -225,18 +239,21 @@ class Bot{
                         ORDER BY price ASC 
                         LIMIT 1";
 
-        // Choose query based on lower or greater than price
-        if($compare=='lower'){
-            $pdoStatement = $connection->prepare($queryLower);
-        }else{
-             $pdoStatement = $connection->prepare($queryGreater);
-        }
-        
-        $pdoStatement->bindParam(":symbol",$symbol);
-        $pdoStatement->bindParam(":alert_price",$alertPrice);
+            // Choose query based on lower or greater than price
+            if ($compare == 'lower') {
+                $pdoStatement = $connection->prepare($queryLower);
+            } else {
+                $pdoStatement = $connection->prepare($queryGreater);
+            }
 
-        $pdoStatement->execute();
-        return $pdoStatement->fetch(PDO::FETCH_OBJ);
+            
+            $pdoStatement->bindParam(":symbol", $symbol);
+            $pdoStatement->bindParam(":alert_price", $alertPrice);
+            $pdoStatement->execute();
+            return $pdoStatement->fetch(PDO::FETCH_OBJ);
+        } catch (PDOException $e) {
+            die($e->getMessage());
+        }
     }
 
     function getTelegramId($username){

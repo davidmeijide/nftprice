@@ -66,6 +66,7 @@ class WatchList{
             $connection = new Connection();
             $pdoStatement = $connection->prepare("UPDATE alerts SET floor_price = :floor_price WHERE id_alert = :id_alert");
             $pdoStatement->bindParam(':id_alert', $id);
+            $floor_price = $floor_price * 1000000000;
             $pdoStatement->bindParam(':floor_price', $floor_price);
             $pdoStatement->execute();
         }

@@ -1,10 +1,8 @@
 # FASE DE IMPLANTACIÓN
 
-
 ## Instalación / Puesta en marcha
 
 ### Requisitos
-
 
 - ^PHP 7.2
 - MySQL
@@ -32,7 +30,27 @@ Utilizaremos CRON para programar la ejecución del script.
 Justo después de actualizar la base de datos, se comprueba si se ha cumplido alguna alerta y se envían los mensajes neesarios.
 Estos scripts generan logs, que se pueden ver en la carpeta /app/logs/.
 
-Para asegurarnos de que se ejecuten secuencialmente (1º `updateScript.php`, 2º `AlertCheckScript.php`), ejecutaremos las órdenes desde un script en bash.
+Para asegurarnos de que se ejecuten secuencialmente (1º `updateScript.php`, 2º `alertCheckScript.php`), ejecutaremos las órdenes desde un script en bash.
+```
+#!/bin/bash
+
+# Ejecuta updateScript.php y guarda la salida en un archivo de logs
+/usr/local/bin/php /var/www/html/src/updateScript.php >> /var/www/html/logs/updateScript.log
+
+# Ejecuta alertCheckScript.php y guarda la salida en un archivo de logs
+/usr/local/bin/php /var/www/html/src/alertCheckScript.php >> /var/www/html/logs/alertCheckScript.log
+
+```
+Ahora con crontab programamos su ejecución cada 1 minuto:
+
+`crontab -e`
+```
+*/1 * * * * /var/www/html/run_scripts.sh > /proc/1/fd/1 2>/proc/1/fd/2
+```
+
+
+
+
 
 ### Administración del sistema
 
