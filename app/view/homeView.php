@@ -45,9 +45,9 @@ function showHead()
                     <a class="alert-link" href="#">Recieve price alerts in your Telegram</a>
                 </p>
             </div>
-            <div class="container-fluid alert alert-success d-md-flex justify-content-between d-none" id="linked-success">
+            <div class="container-fluid alert alert-success justify-content-between d-none" id="linked-success">
                 <p class="align-middle m-0">
-                    You will recieve your alerts to your Telegram.
+                    You will receive your alerts to your Telegram.
                     <a id="send-test-alert" class="alert-link" href="#">Send a test alert</a>
                 </p>
 

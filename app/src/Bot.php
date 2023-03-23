@@ -35,6 +35,10 @@ class Bot{
                 "method" => "GET",
                 "header" => 'Content-Type: application/json',
             ],
+            "ssl"=>array(
+                "verify_peer"=>false,
+                "verify_peer_name"=>false,
+            ),
         ];
         $streamContext = stream_context_create($httpOptions);
         $jsonOutput = file_get_contents($url, false, $streamContext);
