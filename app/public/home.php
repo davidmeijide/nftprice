@@ -119,7 +119,7 @@ elseif(isset($_POST['insertCollection'])){
     echo $collection->insertScript($_POST['symbol']);
 }
 elseif(isset($_POST['getCoinUSD'])){
-    $portfolio = new Portfolio([]);
+    $portfolio = new Portfolio('');
     echo $portfolio->getCoinUSD($_POST['currency']);
 }
 

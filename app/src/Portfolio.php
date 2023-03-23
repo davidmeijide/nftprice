@@ -59,7 +59,9 @@ class Portfolio{
         curl_setopt_array($curl, array(
             CURLOPT_URL => $request,            // set the request URL
             CURLOPT_HTTPHEADER => $headers,     // set the headers 
-            CURLOPT_RETURNTRANSFER => 1         // ask for raw response instead of bool
+            CURLOPT_RETURNTRANSFER => 1,        // ask for raw response instead of bool
+            CURLOPT_SSL_VERIFYPEER => false,
+
         ));
 
         $response = curl_exec($curl); // Send the request, save the response

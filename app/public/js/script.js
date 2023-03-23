@@ -367,6 +367,7 @@ function renderWatchListBody(json){
     
         }
         else if(e.target.name == 'remove'){
+            e.stopPropagation();
             removeAlert(e.target.parentElement.dataset.id)
             getWatchList()
     
@@ -558,6 +559,7 @@ function renderPortfolio(json){
     })
     portfolio_table.addEventListener('click',e=>{
         if(e.target.classList.contains('removeItem')){
+            e.stopPropagation()
             removeItem(e.target.parentElement.dataset.id)
             /* showPortfolio() */
             getPortfolio()
