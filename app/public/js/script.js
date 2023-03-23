@@ -780,7 +780,7 @@ function renderAttributeSelect(json){
     const types_select = clone.querySelector('.attribute-types')
     const values_select = clone.querySelector('.attribute-values')
     values_select.innerHTML = ""
-    const container = document.querySelector('#attribute-group')
+    const container = document.querySelector('.attribute-group')
 
     const fragment = document.createDocumentFragment()
 
@@ -844,6 +844,7 @@ function fillAttributeValues(json, dataset_id){
         option.textContent = element.value
         fragment.appendChild(option)
     })
+    values_select.innerHTML="";
     values_select.appendChild(fragment)
 }
 

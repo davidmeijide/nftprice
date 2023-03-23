@@ -42,7 +42,7 @@ function showHead()
                 <h5 class="">Telegram not linked</h5>
                 <p class="align-middle m-0">
                     We will alert you if any NFT in your watchlist reaches the set price.
-                    <a class="alert-link" href="#">Recieve price alerts in your Telegram</a>
+                    <a class="alert-link" href="#">Receive price alerts in your Telegram</a>
                 </p>
             </div>
             <div class="container-fluid alert alert-success justify-content-between d-none" id="linked-success">
@@ -331,7 +331,7 @@ function showTemplates()
                 </div>
                 <div id="attribute-group-container" class="mb-2 mr-sm-2">
                     <h5 id="att-title" class="mb-4">Attributes</h5>
-                    <div id="attribute-group"></div>
+                    <div class="attribute-group"></div>
                     <div class="d-flex justify-content-between">
                         <a id="remove-attribute" href="#att-title" class="text-decoration-none mt-2 text-danger">
                             <i class="icon-container">
@@ -385,7 +385,7 @@ function showTemplates()
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Recieve your alerts on Telegram</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Receive your alerts on Telegram</h5>
                     <button type="button" id="close-modal" class="btn-close" data-dismiss="modal" aria-label="Close">
                     </button>
                 </div>
