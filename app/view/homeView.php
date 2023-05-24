@@ -23,18 +23,12 @@ function showHead()
     </head>
 
     <body>
-        <header class="container mw-50 d-flex justify-content-between mb-0">
-            <a class="text-decoration-none" href="/home"><h1 class="ms-0 text-dark">NFTprice</h1></a>
-            <div class="d-flex align-items-center">
-                <div class="d-flex justify-content-between">
-                </div>
-                <div class="dropdown">
+        <header class="d-flex justify-content-between p-1 align-items-center bg-light border border-dark">
+            <a class="text-decoration-none text text-dark"  href="/index"><h1>NFTprice</h1></a>
+            <div class="p-3">
                 <a class="" href="logout.php">
                     <button class="btn btn-secondary bg-transparent text-dark" type="button">Logout</button>
                     </a>
-
-                </div>
-
             </div>
         </header>
         <nav class="container-md mw-50">

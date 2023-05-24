@@ -198,3 +198,2454 @@
 [2023-03-22 06:08:01] No active watchlists to update. Skipping...
 [2023-03-22 06:09:01] No active watchlists to update. Skipping...
 [2023-03-22 06:10:01] No active watchlists to update. Skipping...
+
+Warning: file_get_contents(https://api-mainnet.magiceden.dev/v2/collections/degods/listings?offset=40&limit=20): Failed to open stream: Connection timed out in /var/www/html/src/Token.php on line 119
+
+Fatal error: Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in /var/www/html/src/Token.php:122
+Stack trace:
+#0 /var/www/html/src/Token.php(122): array_merge(Array, NULL)
+#1 /var/www/html/src/updateScript.php(34): Token->apiGetListedTokens('degods')
+#2 {main}
+  thrown in /var/www/html/src/Token.php on line 122
+
+Warning: file_get_contents(https://api-mainnet.magiceden.dev/v2/collections/degods/listings?offset=80&limit=20): Failed to open stream: HTTP request failed! in /var/www/html/src/Token.php on line 119
+
+Fatal error: Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in /var/www/html/src/Token.php:122
+Stack trace:
+#0 /var/www/html/src/Token.php(122): array_merge(Array, NULL)
+#1 /var/www/html/src/updateScript.php(34): Token->apiGetListedTokens('degods')
+#2 {main}
+  thrown in /var/www/html/src/Token.php on line 122
+[2023-03-22 11:36:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:36:01] Last degods update was 6 minute(s) ago.
+[2023-03-22 11:36:01] Updating...
+[2023-03-22 11:36:12] apiGetListedTokens
+[2023-03-22 11:36:13] updateTokenInfo
+[2023-03-22 11:36:13] updateCollectionInfo
+[2023-03-22 11:36:01] Last t00bs update was 6 minute(s) ago.
+[2023-03-22 11:36:13] Updating...
+[2023-03-22 11:36:16] apiGetListedTokens
+[2023-03-22 11:36:16] updateTokenInfo
+[2023-03-22 11:36:16] updateCollectionInfo
+[2023-03-22 11:36:16] Finished updating. Seconds: 15.55
+[2023-03-22 11:37:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:37:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:37:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:37:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:38:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-22 11:38:01] Updating...
+[2023-03-22 11:38:08] apiGetListedTokens
+[2023-03-22 11:38:08] updateTokenInfo
+[2023-03-22 11:38:08] updateCollectionInfo
+[2023-03-22 11:38:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:38:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:38:08] Finished updating. Seconds: 7.08
+[2023-03-22 11:39:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:39:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:39:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:39:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:40:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:40:01] Last degods update was 3 minute(s) ago.
+[2023-03-22 11:40:01] Updating...
+[2023-03-22 11:40:11] apiGetListedTokens
+[2023-03-22 11:40:12] updateTokenInfo
+[2023-03-22 11:40:12] updateCollectionInfo
+[2023-03-22 11:40:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-22 11:40:12] Updating...
+[2023-03-22 11:40:16] apiGetListedTokens
+[2023-03-22 11:40:16] updateTokenInfo
+[2023-03-22 11:40:16] updateCollectionInfo
+[2023-03-22 11:40:16] Finished updating. Seconds: 15.14
+[2023-03-22 11:41:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:41:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:41:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:41:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:42:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-22 11:42:01] Updating...
+[2023-03-22 11:42:09] apiGetListedTokens
+[2023-03-22 11:42:09] updateTokenInfo
+[2023-03-22 11:42:09] updateCollectionInfo
+[2023-03-22 11:42:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:42:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:42:09] Finished updating. Seconds: 7.69
+[2023-03-22 11:43:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:43:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:43:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:43:01] Finished updating. Seconds: 0
+[2023-03-22 11:44:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:44:01] Last degods update was 3 minute(s) ago.
+[2023-03-22 11:44:01] Updating...
+[2023-03-22 11:44:12] apiGetListedTokens
+[2023-03-22 11:44:13] updateTokenInfo
+[2023-03-22 11:44:13] updateCollectionInfo
+[2023-03-22 11:44:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-22 11:44:13] Updating...
+[2023-03-22 11:44:17] apiGetListedTokens
+[2023-03-22 11:44:17] updateTokenInfo
+[2023-03-22 11:44:17] updateCollectionInfo
+[2023-03-22 11:44:17] Finished updating. Seconds: 15.99
+[2023-03-22 11:45:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:45:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:45:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:45:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:46:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-22 11:46:01] Updating...
+[2023-03-22 11:46:48] apiGetListedTokens
+[2023-03-22 11:46:48] updateTokenInfo
+[2023-03-22 11:46:48] updateCollectionInfo
+[2023-03-22 11:46:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:46:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:46:48] Finished updating. Seconds: 46.73
+[2023-03-22 11:47:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:47:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:47:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:47:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:48:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:48:01] Last degods update was 3 minute(s) ago.
+[2023-03-22 11:48:01] Updating...
+[2023-03-22 11:48:14] apiGetListedTokens
+[2023-03-22 11:48:14] updateTokenInfo
+[2023-03-22 11:48:14] updateCollectionInfo
+[2023-03-22 11:48:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-22 11:48:14] Updating...
+[2023-03-22 11:48:18] apiGetListedTokens
+[2023-03-22 11:48:18] updateTokenInfo
+[2023-03-22 11:48:18] updateCollectionInfo
+[2023-03-22 11:48:18] Finished updating. Seconds: 17.23
+[2023-03-22 11:49:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:49:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:49:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:49:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:50:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-22 11:50:01] Updating...
+[2023-03-22 11:50:08] apiGetListedTokens
+[2023-03-22 11:50:08] updateTokenInfo
+[2023-03-22 11:50:08] updateCollectionInfo
+[2023-03-22 11:50:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:50:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:50:08] Finished updating. Seconds: 7.03
+[2023-03-22 11:51:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:51:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:51:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:51:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:52:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:52:01] Last degods update was 3 minute(s) ago.
+[2023-03-22 11:52:01] Updating...
+[2023-03-22 11:52:10] apiGetListedTokens
+[2023-03-22 11:52:11] updateTokenInfo
+[2023-03-22 11:52:11] updateCollectionInfo
+[2023-03-22 11:52:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-22 11:52:11] Updating...
+[2023-03-22 11:52:15] apiGetListedTokens
+[2023-03-22 11:52:15] updateTokenInfo
+[2023-03-22 11:52:15] updateCollectionInfo
+[2023-03-22 11:52:15] Finished updating. Seconds: 14.56
+[2023-03-22 11:53:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:53:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:53:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:53:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:54:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-22 11:54:01] Updating...
+[2023-03-22 11:54:08] apiGetListedTokens
+[2023-03-22 11:54:08] updateTokenInfo
+[2023-03-22 11:54:08] updateCollectionInfo
+[2023-03-22 11:54:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:54:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:54:08] Finished updating. Seconds: 7.61
+[2023-03-22 11:55:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:55:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:55:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:55:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:56:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:56:01] Last degods update was 3 minute(s) ago.
+[2023-03-22 11:56:01] Updating...
+[2023-03-22 11:56:11] apiGetListedTokens
+[2023-03-22 11:56:12] updateTokenInfo
+[2023-03-22 11:56:12] updateCollectionInfo
+[2023-03-22 11:56:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-22 11:56:12] Updating...
+[2023-03-22 11:56:16] apiGetListedTokens
+[2023-03-22 11:56:16] updateTokenInfo
+[2023-03-22 11:56:16] updateCollectionInfo
+[2023-03-22 11:56:16] Finished updating. Seconds: 14.39
+[2023-03-22 11:57:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:57:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:57:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:57:01] Finished updating. Seconds: 0.01
+[2023-03-22 11:58:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-22 11:58:01] Updating...
+[2023-03-22 11:58:08] apiGetListedTokens
+[2023-03-22 11:58:08] updateTokenInfo
+[2023-03-22 11:58:08] updateCollectionInfo
+[2023-03-22 11:58:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:58:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-22 11:58:08] Finished updating. Seconds: 7.4
+[2023-03-22 11:59:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-22 11:59:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:59:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-22 11:59:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:00:02] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:00:02] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:00:02] Updating...
+[2023-03-23 12:00:12] apiGetListedTokens
+[2023-03-23 12:00:12] updateTokenInfo
+[2023-03-23 12:00:12] updateCollectionInfo
+[2023-03-23 12:00:02] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:00:12] Updating...
+[2023-03-23 12:00:16] apiGetListedTokens
+[2023-03-23 12:00:16] updateTokenInfo
+[2023-03-23 12:00:16] updateCollectionInfo
+[2023-03-23 12:00:16] Finished updating. Seconds: 14.75
+[2023-03-23 12:01:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:01:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:01:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:01:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:02:02] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:02:02] Updating...
+[2023-03-23 12:02:22] apiGetListedTokens
+[2023-03-23 12:02:22] updateTokenInfo
+[2023-03-23 12:02:22] updateCollectionInfo
+[2023-03-23 12:02:02] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:02:02] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:02:22] Finished updating. Seconds: 20.62
+[2023-03-23 12:03:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:03:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:03:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:03:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:04:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:04:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:04:01] Updating...
+[2023-03-23 12:04:11] apiGetListedTokens
+[2023-03-23 12:04:12] updateTokenInfo
+[2023-03-23 12:04:12] updateCollectionInfo
+[2023-03-23 12:04:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:04:12] Updating...
+[2023-03-23 12:04:16] apiGetListedTokens
+[2023-03-23 12:04:16] updateTokenInfo
+[2023-03-23 12:04:16] updateCollectionInfo
+[2023-03-23 12:04:16] Finished updating. Seconds: 14.89
+[2023-03-23 12:05:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:05:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:05:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:05:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:06:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:06:01] Updating...
+[2023-03-23 12:06:08] apiGetListedTokens
+[2023-03-23 12:06:08] updateTokenInfo
+[2023-03-23 12:06:08] updateCollectionInfo
+[2023-03-23 12:06:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:06:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:06:08] Finished updating. Seconds: 6.68
+[2023-03-23 12:07:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:07:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:07:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:07:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:08:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:08:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:08:01] Updating...
+[2023-03-23 12:08:11] apiGetListedTokens
+[2023-03-23 12:08:12] updateTokenInfo
+[2023-03-23 12:08:12] updateCollectionInfo
+[2023-03-23 12:08:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:08:12] Updating...
+[2023-03-23 12:08:16] apiGetListedTokens
+[2023-03-23 12:08:16] updateTokenInfo
+[2023-03-23 12:08:16] updateCollectionInfo
+[2023-03-23 12:08:16] Finished updating. Seconds: 14.5
+[2023-03-23 12:09:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:09:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:09:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:09:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:10:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:10:01] Updating...
+[2023-03-23 12:10:08] apiGetListedTokens
+[2023-03-23 12:10:08] updateTokenInfo
+[2023-03-23 12:10:08] updateCollectionInfo
+[2023-03-23 12:10:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:10:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:10:08] Finished updating. Seconds: 7.36
+[2023-03-23 12:11:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:11:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:11:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:11:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:12:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:12:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:12:01] Updating...
+[2023-03-23 12:12:10] apiGetListedTokens
+[2023-03-23 12:12:11] updateTokenInfo
+[2023-03-23 12:12:11] updateCollectionInfo
+[2023-03-23 12:12:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:12:11] Updating...
+[2023-03-23 12:12:15] apiGetListedTokens
+[2023-03-23 12:12:15] updateTokenInfo
+[2023-03-23 12:12:15] updateCollectionInfo
+[2023-03-23 12:12:15] Finished updating. Seconds: 14.12
+[2023-03-23 12:13:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:13:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:13:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:13:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:14:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:14:01] Updating...
+[2023-03-23 12:14:09] apiGetListedTokens
+[2023-03-23 12:14:09] updateTokenInfo
+[2023-03-23 12:14:09] updateCollectionInfo
+[2023-03-23 12:14:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:14:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:14:09] Finished updating. Seconds: 8.32
+[2023-03-23 12:15:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:15:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:15:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:15:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:16:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:16:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:16:01] Updating...
+[2023-03-23 12:16:11] apiGetListedTokens
+[2023-03-23 12:16:11] updateTokenInfo
+[2023-03-23 12:16:11] updateCollectionInfo
+[2023-03-23 12:16:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:16:11] Updating...
+[2023-03-23 12:16:17] apiGetListedTokens
+[2023-03-23 12:16:17] updateTokenInfo
+[2023-03-23 12:16:17] updateCollectionInfo
+[2023-03-23 12:16:17] Finished updating. Seconds: 15.31
+[2023-03-23 12:17:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:17:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:17:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:17:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:18:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:18:01] Updating...
+[2023-03-23 12:18:11] apiGetListedTokens
+[2023-03-23 12:18:11] updateTokenInfo
+[2023-03-23 12:18:11] updateCollectionInfo
+[2023-03-23 12:18:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:18:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:18:11] Finished updating. Seconds: 10.33
+[2023-03-23 12:19:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:19:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:19:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:19:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:20:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:20:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:20:01] Updating...
+[2023-03-23 12:20:17] apiGetListedTokens
+[2023-03-23 12:20:18] updateTokenInfo
+[2023-03-23 12:20:18] updateCollectionInfo
+[2023-03-23 12:20:01] Last t00bs update was 4 minute(s) ago.
+[2023-03-23 12:20:18] Updating...
+[2023-03-23 12:20:22] apiGetListedTokens
+[2023-03-23 12:20:22] updateTokenInfo
+[2023-03-23 12:20:22] updateCollectionInfo
+[2023-03-23 12:20:22] Finished updating. Seconds: 20.28
+[2023-03-23 12:21:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:21:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:21:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:21:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:22:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:22:01] Updating...
+[2023-03-23 12:22:48] apiGetListedTokens
+[2023-03-23 12:22:48] updateTokenInfo
+[2023-03-23 12:22:48] updateCollectionInfo
+[2023-03-23 12:22:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:22:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:22:48] Finished updating. Seconds: 47.32
+[2023-03-23 12:23:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:23:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:23:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:23:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:24:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:24:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:24:01] Updating...
+[2023-03-23 12:24:11] apiGetListedTokens
+[2023-03-23 12:24:12] updateTokenInfo
+[2023-03-23 12:24:12] updateCollectionInfo
+[2023-03-23 12:24:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:24:12] Updating...
+[2023-03-23 12:24:16] apiGetListedTokens
+[2023-03-23 12:24:16] updateTokenInfo
+[2023-03-23 12:24:16] updateCollectionInfo
+[2023-03-23 12:24:16] Finished updating. Seconds: 14.38
+[2023-03-23 12:25:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:25:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:25:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:25:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:26:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:26:01] Updating...
+[2023-03-23 12:26:08] apiGetListedTokens
+[2023-03-23 12:26:08] updateTokenInfo
+[2023-03-23 12:26:08] updateCollectionInfo
+[2023-03-23 12:26:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:26:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:26:08] Finished updating. Seconds: 7.21
+[2023-03-23 12:27:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:27:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:27:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:27:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:28:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:28:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:28:01] Updating...
+[2023-03-23 12:28:12] apiGetListedTokens
+[2023-03-23 12:28:12] updateTokenInfo
+[2023-03-23 12:28:12] updateCollectionInfo
+[2023-03-23 12:28:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:28:12] Updating...
+[2023-03-23 12:28:17] apiGetListedTokens
+[2023-03-23 12:28:17] updateTokenInfo
+[2023-03-23 12:28:17] updateCollectionInfo
+[2023-03-23 12:28:17] Finished updating. Seconds: 15.16
+[2023-03-23 12:29:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:29:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:29:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:29:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:30:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:30:01] Updating...
+[2023-03-23 12:30:08] apiGetListedTokens
+[2023-03-23 12:30:08] updateTokenInfo
+[2023-03-23 12:30:08] updateCollectionInfo
+[2023-03-23 12:30:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:30:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:30:08] Finished updating. Seconds: 7.18
+[2023-03-23 12:31:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:31:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:31:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:31:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:32:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:32:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:32:01] Updating...
+[2023-03-23 12:32:11] apiGetListedTokens
+[2023-03-23 12:32:12] updateTokenInfo
+[2023-03-23 12:32:12] updateCollectionInfo
+[2023-03-23 12:32:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:32:12] Updating...
+[2023-03-23 12:32:16] apiGetListedTokens
+[2023-03-23 12:32:16] updateTokenInfo
+[2023-03-23 12:32:16] updateCollectionInfo
+[2023-03-23 12:32:16] Finished updating. Seconds: 14.82
+[2023-03-23 12:33:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:33:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:33:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:33:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:34:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:34:01] Updating...
+[2023-03-23 12:34:10] apiGetListedTokens
+[2023-03-23 12:34:10] updateTokenInfo
+[2023-03-23 12:34:10] updateCollectionInfo
+[2023-03-23 12:34:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:34:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:34:10] Finished updating. Seconds: 8.85
+[2023-03-23 12:35:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:35:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:35:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:35:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:36:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:36:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:36:01] Updating...
+[2023-03-23 12:36:11] apiGetListedTokens
+[2023-03-23 12:36:12] updateTokenInfo
+[2023-03-23 12:36:12] updateCollectionInfo
+[2023-03-23 12:36:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:36:12] Updating...
+[2023-03-23 12:36:16] apiGetListedTokens
+[2023-03-23 12:36:16] updateTokenInfo
+[2023-03-23 12:36:16] updateCollectionInfo
+[2023-03-23 12:36:16] Finished updating. Seconds: 14.71
+[2023-03-23 12:37:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:37:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:37:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:37:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:38:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:38:01] Updating...
+[2023-03-23 12:38:51] apiGetListedTokens
+[2023-03-23 12:38:51] updateTokenInfo
+[2023-03-23 12:38:51] updateCollectionInfo
+[2023-03-23 12:38:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:38:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:38:51] Finished updating. Seconds: 49.57
+[2023-03-23 12:39:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:39:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:39:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:39:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:40:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:40:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:40:01] Updating...
+[2023-03-23 12:40:13] apiGetListedTokens
+[2023-03-23 12:40:14] updateTokenInfo
+[2023-03-23 12:40:14] updateCollectionInfo
+[2023-03-23 12:40:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:40:14] Updating...
+[2023-03-23 12:40:19] apiGetListedTokens
+[2023-03-23 12:40:19] updateTokenInfo
+[2023-03-23 12:40:19] updateCollectionInfo
+[2023-03-23 12:40:19] Finished updating. Seconds: 17.69
+[2023-03-23 12:41:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:41:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:41:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:41:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:42:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:42:01] Updating...
+[2023-03-23 12:42:09] apiGetListedTokens
+[2023-03-23 12:42:09] updateTokenInfo
+[2023-03-23 12:42:09] updateCollectionInfo
+[2023-03-23 12:42:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:42:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:42:09] Finished updating. Seconds: 7.86
+[2023-03-23 12:43:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:43:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:43:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:43:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:44:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:44:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:44:01] Updating...
+[2023-03-23 12:44:11] apiGetListedTokens
+[2023-03-23 12:44:11] updateTokenInfo
+[2023-03-23 12:44:11] updateCollectionInfo
+[2023-03-23 12:44:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:44:11] Updating...
+[2023-03-23 12:44:17] apiGetListedTokens
+[2023-03-23 12:44:17] updateTokenInfo
+[2023-03-23 12:44:17] updateCollectionInfo
+[2023-03-23 12:44:17] Finished updating. Seconds: 16.26
+[2023-03-23 12:45:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:45:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:45:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:45:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:46:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:46:01] Updating...
+[2023-03-23 12:46:09] apiGetListedTokens
+[2023-03-23 12:46:09] updateTokenInfo
+[2023-03-23 12:46:09] updateCollectionInfo
+[2023-03-23 12:46:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:46:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:46:09] Finished updating. Seconds: 7.69
+[2023-03-23 12:47:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:47:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:47:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:47:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:48:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:48:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:48:01] Updating...
+[2023-03-23 12:48:12] apiGetListedTokens
+[2023-03-23 12:48:13] updateTokenInfo
+[2023-03-23 12:48:13] updateCollectionInfo
+[2023-03-23 12:48:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:48:13] Updating...
+[2023-03-23 12:48:18] apiGetListedTokens
+[2023-03-23 12:48:18] updateTokenInfo
+[2023-03-23 12:48:18] updateCollectionInfo
+[2023-03-23 12:48:18] Finished updating. Seconds: 16.39
+[2023-03-23 12:49:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:49:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:49:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:49:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:50:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:50:01] Updating...
+[2023-03-23 12:50:08] apiGetListedTokens
+[2023-03-23 12:50:09] updateTokenInfo
+[2023-03-23 12:50:09] updateCollectionInfo
+[2023-03-23 12:50:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:50:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:50:09] Finished updating. Seconds: 7.49
+[2023-03-23 12:51:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:51:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:51:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:51:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:52:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:52:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:52:01] Updating...
+[2023-03-23 12:52:15] apiGetListedTokens
+[2023-03-23 12:52:16] updateTokenInfo
+[2023-03-23 12:52:16] updateCollectionInfo
+[2023-03-23 12:52:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:52:16] Updating...
+[2023-03-23 12:52:20] apiGetListedTokens
+[2023-03-23 12:52:20] updateTokenInfo
+[2023-03-23 12:52:20] updateCollectionInfo
+[2023-03-23 12:52:20] Finished updating. Seconds: 18.83
+[2023-03-23 12:53:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:53:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:53:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:53:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:54:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-23 12:54:01] Updating...
+[2023-03-23 12:54:08] apiGetListedTokens
+[2023-03-23 12:54:08] updateTokenInfo
+[2023-03-23 12:54:08] updateCollectionInfo
+[2023-03-23 12:54:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:54:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:54:08] Finished updating. Seconds: 7.09
+[2023-03-23 12:55:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-23 12:55:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:55:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-23 12:55:01] Finished updating. Seconds: 0.01
+[2023-03-23 12:56:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-23 12:56:01] Last degods update was 3 minute(s) ago.
+[2023-03-23 12:56:01] Updating...
+[2023-03-23 12:56:11] apiGetListedTokens
+[2023-03-23 12:56:11] updateTokenInfo
+[2023-03-23 12:56:11] updateCollectionInfo
+[2023-03-23 12:56:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-23 12:56:11] Updating...
+[2023-03-23 12:56:16] apiGetListedTokens
+[2023-03-23 12:56:16] updateTokenInfo
+[2023-03-23 12:56:16] updateCollectionInfo
+[2023-03-23 12:56:16] Finished updating. Seconds: 14.66
+[2023-03-27 08:46:01] Last abc_abracadabra update was 51 minute(s) ago.
+[2023-03-27 08:46:01] Updating...
+[2023-03-27 08:46:07] apiGetListedTokens
+[2023-03-27 08:46:07] updateTokenInfo
+[2023-03-27 08:46:07] updateCollectionInfo
+[2023-03-27 08:46:01] Last degods update was 49 minute(s) ago.
+[2023-03-27 08:46:07] Updating...
+[2023-03-27 08:46:15] apiGetListedTokens
+[2023-03-27 08:46:16] updateTokenInfo
+[2023-03-27 08:46:16] updateCollectionInfo
+[2023-03-27 08:46:01] Last t00bs update was 50 minute(s) ago.
+[2023-03-27 08:46:16] Updating...
+[2023-03-27 08:46:19] apiGetListedTokens
+[2023-03-27 08:46:19] updateTokenInfo
+[2023-03-27 08:46:19] updateCollectionInfo
+[2023-03-27 08:46:19] Finished updating. Seconds: 18.74
+[2023-03-27 08:47:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:47:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:47:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:47:01] Finished updating. Seconds: 0.01
+[2023-03-27 08:48:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:48:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:48:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:48:01] Finished updating. Seconds: 0
+[2023-03-27 08:49:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:49:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:49:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:49:01] Finished updating. Seconds: 0.01
+[2023-03-27 08:50:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 08:50:01] Updating...
+[2023-03-27 08:50:06] apiGetListedTokens
+[2023-03-27 08:50:06] updateTokenInfo
+[2023-03-27 08:50:06] updateCollectionInfo
+[2023-03-27 08:50:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 08:50:06] Updating...
+[2023-03-27 08:50:15] apiGetListedTokens
+[2023-03-27 08:50:15] updateTokenInfo
+[2023-03-27 08:50:15] updateCollectionInfo
+[2023-03-27 08:50:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 08:50:15] Updating...
+[2023-03-27 08:50:19] apiGetListedTokens
+[2023-03-27 08:50:19] updateTokenInfo
+[2023-03-27 08:50:19] updateCollectionInfo
+[2023-03-27 08:50:19] Finished updating. Seconds: 17.93
+[2023-03-27 08:51:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:51:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:51:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:51:01] Finished updating. Seconds: 0.01
+[2023-03-27 08:52:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:52:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:52:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:52:01] Finished updating. Seconds: 0
+[2023-03-27 08:53:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:53:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:53:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:53:01] Finished updating. Seconds: 0
+[2023-03-27 08:54:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 08:54:01] Updating...
+[2023-03-27 08:54:48] apiGetListedTokens
+[2023-03-27 08:54:48] updateTokenInfo
+[2023-03-27 08:54:48] updateCollectionInfo
+[2023-03-27 08:54:01] Last degods update was 4 minute(s) ago.
+[2023-03-27 08:54:48] Updating...
+[2023-03-27 08:54:58] apiGetListedTokens
+[2023-03-27 08:54:59] updateTokenInfo
+[2023-03-27 08:54:59] updateCollectionInfo
+[2023-03-27 08:54:01] Last t00bs update was 4 minute(s) ago.
+[2023-03-27 08:54:59] Updating...
+[2023-03-27 08:55:01] apiGetListedTokens
+[2023-03-27 08:55:01] updateTokenInfo
+[2023-03-27 08:55:01] updateCollectionInfo
+[2023-03-27 08:55:01] Finished updating. Seconds: 60.16
+[2023-03-27 08:55:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:55:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:55:01] Last t00bs update was 4 minute(s) ago.
+[2023-03-27 08:55:01] Updating...
+[2023-03-27 08:55:03] apiGetListedTokens
+[2023-03-27 08:55:03] updateTokenInfo
+[2023-03-27 08:55:03] updateCollectionInfo
+[2023-03-27 08:55:03] Finished updating. Seconds: 1.93
+[2023-03-27 08:56:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:56:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:56:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:56:01] Finished updating. Seconds: 0.01
+[2023-03-27 08:57:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:57:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 08:57:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 08:57:01] Finished updating. Seconds: 0.01
+[2023-03-27 08:58:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 08:58:01] Updating...
+[2023-03-27 08:58:07] apiGetListedTokens
+[2023-03-27 08:58:07] updateTokenInfo
+[2023-03-27 08:58:07] updateCollectionInfo
+[2023-03-27 08:58:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 08:58:07] Updating...
+[2023-03-27 08:58:17] apiGetListedTokens
+[2023-03-27 08:58:18] updateTokenInfo
+[2023-03-27 08:58:18] updateCollectionInfo
+[2023-03-27 08:58:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 08:58:18] Updating...
+[2023-03-27 08:58:21] apiGetListedTokens
+[2023-03-27 08:58:21] updateTokenInfo
+[2023-03-27 08:58:21] updateCollectionInfo
+[2023-03-27 08:58:21] Finished updating. Seconds: 19.28
+[2023-03-27 08:59:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:59:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:59:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 08:59:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:00:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:00:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:00:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:00:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:01:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:01:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:01:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:01:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:02:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:02:01] Updating...
+[2023-03-27 09:02:08] apiGetListedTokens
+[2023-03-27 09:02:08] updateTokenInfo
+[2023-03-27 09:02:08] updateCollectionInfo
+[2023-03-27 09:02:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:02:08] Updating...
+[2023-03-27 09:02:17] apiGetListedTokens
+[2023-03-27 09:02:18] updateTokenInfo
+[2023-03-27 09:02:18] updateCollectionInfo
+[2023-03-27 09:02:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:02:18] Updating...
+[2023-03-27 09:02:20] apiGetListedTokens
+[2023-03-27 09:02:21] updateTokenInfo
+[2023-03-27 09:02:21] updateCollectionInfo
+[2023-03-27 09:02:21] Finished updating. Seconds: 19.42
+[2023-03-27 09:03:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:03:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:03:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:03:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:04:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:04:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:04:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:04:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:05:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:05:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:05:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:05:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:06:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:06:01] Updating...
+[2023-03-27 09:06:06] apiGetListedTokens
+[2023-03-27 09:06:07] updateTokenInfo
+[2023-03-27 09:06:07] updateCollectionInfo
+[2023-03-27 09:06:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:06:07] Updating...
+[2023-03-27 09:06:16] apiGetListedTokens
+[2023-03-27 09:06:17] updateTokenInfo
+[2023-03-27 09:06:17] updateCollectionInfo
+[2023-03-27 09:06:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:06:17] Updating...
+[2023-03-27 09:06:21] apiGetListedTokens
+[2023-03-27 09:06:21] updateTokenInfo
+[2023-03-27 09:06:21] updateCollectionInfo
+[2023-03-27 09:06:21] Finished updating. Seconds: 20.02
+[2023-03-27 09:07:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:07:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:07:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:07:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:08:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:08:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:08:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:08:01] Finished updating. Seconds: 0
+[2023-03-27 09:09:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:09:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:09:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:09:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:10:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:10:01] Updating...
+[2023-03-27 09:10:10] apiGetListedTokens
+[2023-03-27 09:10:10] updateTokenInfo
+[2023-03-27 09:10:10] updateCollectionInfo
+[2023-03-27 09:10:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:10:10] Updating...
+[2023-03-27 09:10:18] apiGetListedTokens
+[2023-03-27 09:10:19] updateTokenInfo
+[2023-03-27 09:10:19] updateCollectionInfo
+[2023-03-27 09:10:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:10:19] Updating...
+[2023-03-27 09:10:22] apiGetListedTokens
+[2023-03-27 09:10:22] updateTokenInfo
+[2023-03-27 09:10:22] updateCollectionInfo
+[2023-03-27 09:10:22] Finished updating. Seconds: 20.83
+[2023-03-27 09:11:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:11:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:11:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:11:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:12:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:12:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:12:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:12:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:13:02] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:13:02] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:13:02] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:13:02] Finished updating. Seconds: 0
+[2023-03-27 09:14:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:14:01] Updating...
+[2023-03-27 09:14:07] apiGetListedTokens
+[2023-03-27 09:14:07] updateTokenInfo
+[2023-03-27 09:14:07] updateCollectionInfo
+[2023-03-27 09:14:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:14:07] Updating...
+[2023-03-27 09:14:17] apiGetListedTokens
+[2023-03-27 09:14:17] updateTokenInfo
+[2023-03-27 09:14:17] updateCollectionInfo
+[2023-03-27 09:14:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:14:17] Updating...
+[2023-03-27 09:14:21] apiGetListedTokens
+[2023-03-27 09:14:21] updateTokenInfo
+[2023-03-27 09:14:21] updateCollectionInfo
+[2023-03-27 09:14:21] Finished updating. Seconds: 20.59
+[2023-03-27 09:15:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:15:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:15:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:15:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:16:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:16:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:16:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:16:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:17:02] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:17:02] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:17:02] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:17:02] Finished updating. Seconds: 0.01
+[2023-03-27 09:18:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:18:01] Updating...
+[2023-03-27 09:18:08] apiGetListedTokens
+[2023-03-27 09:18:08] updateTokenInfo
+[2023-03-27 09:18:08] updateCollectionInfo
+[2023-03-27 09:18:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:18:08] Updating...
+[2023-03-27 09:18:17] apiGetListedTokens
+[2023-03-27 09:18:17] updateTokenInfo
+[2023-03-27 09:18:17] updateCollectionInfo
+[2023-03-27 09:18:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:18:17] Updating...
+[2023-03-27 09:18:20] apiGetListedTokens
+[2023-03-27 09:18:20] updateTokenInfo
+[2023-03-27 09:18:20] updateCollectionInfo
+[2023-03-27 09:18:20] Finished updating. Seconds: 19.52
+[2023-03-27 09:19:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:19:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:19:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:19:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:20:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:20:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:20:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:20:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:21:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:21:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:21:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:21:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:22:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:22:01] Updating...
+[2023-03-27 09:22:07] apiGetListedTokens
+[2023-03-27 09:22:07] updateTokenInfo
+[2023-03-27 09:22:07] updateCollectionInfo
+[2023-03-27 09:22:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:22:07] Updating...
+[2023-03-27 09:22:15] apiGetListedTokens
+[2023-03-27 09:22:16] updateTokenInfo
+[2023-03-27 09:22:16] updateCollectionInfo
+[2023-03-27 09:22:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:22:16] Updating...
+[2023-03-27 09:22:18] apiGetListedTokens
+[2023-03-27 09:22:18] updateTokenInfo
+[2023-03-27 09:22:18] updateCollectionInfo
+[2023-03-27 09:22:18] Finished updating. Seconds: 17.78
+[2023-03-27 09:23:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:23:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:23:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:23:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:24:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:24:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:24:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:24:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:25:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:25:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:25:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:25:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:26:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:26:01] Updating...
+[2023-03-27 09:26:07] apiGetListedTokens
+[2023-03-27 09:26:07] updateTokenInfo
+[2023-03-27 09:26:07] updateCollectionInfo
+[2023-03-27 09:26:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:26:07] Updating...
+[2023-03-27 09:26:15] apiGetListedTokens
+[2023-03-27 09:26:16] updateTokenInfo
+[2023-03-27 09:26:16] updateCollectionInfo
+[2023-03-27 09:26:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:26:16] Updating...
+[2023-03-27 09:26:19] apiGetListedTokens
+[2023-03-27 09:26:19] updateTokenInfo
+[2023-03-27 09:26:19] updateCollectionInfo
+[2023-03-27 09:26:19] Finished updating. Seconds: 18.16
+[2023-03-27 09:27:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:27:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:27:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:27:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:28:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:28:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:28:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:28:01] Finished updating. Seconds: 0
+[2023-03-27 09:29:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:29:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:29:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:29:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:30:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:30:01] Updating...
+[2023-03-27 09:30:08] apiGetListedTokens
+[2023-03-27 09:30:08] updateTokenInfo
+[2023-03-27 09:30:08] updateCollectionInfo
+[2023-03-27 09:30:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:30:08] Updating...
+[2023-03-27 09:30:17] apiGetListedTokens
+[2023-03-27 09:30:17] updateTokenInfo
+[2023-03-27 09:30:17] updateCollectionInfo
+[2023-03-27 09:30:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:30:17] Updating...
+[2023-03-27 09:30:21] apiGetListedTokens
+[2023-03-27 09:30:22] updateTokenInfo
+[2023-03-27 09:30:22] updateCollectionInfo
+[2023-03-27 09:30:22] Finished updating. Seconds: 20.22
+[2023-03-27 09:31:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:31:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:31:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:31:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:32:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:32:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:32:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:32:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:33:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:33:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:33:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:33:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:34:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:34:01] Updating...
+[2023-03-27 09:34:08] apiGetListedTokens
+[2023-03-27 09:34:08] updateTokenInfo
+[2023-03-27 09:34:08] updateCollectionInfo
+[2023-03-27 09:34:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:34:08] Updating...
+[2023-03-27 09:34:17] apiGetListedTokens
+[2023-03-27 09:34:18] updateTokenInfo
+[2023-03-27 09:34:18] updateCollectionInfo
+[2023-03-27 09:34:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:34:18] Updating...
+[2023-03-27 09:34:20] apiGetListedTokens
+[2023-03-27 09:34:21] updateTokenInfo
+[2023-03-27 09:34:21] updateCollectionInfo
+[2023-03-27 09:34:21] Finished updating. Seconds: 19.55
+[2023-03-27 09:35:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:35:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:35:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:35:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:36:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:36:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:36:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:36:01] Finished updating. Seconds: 0
+[2023-03-27 09:37:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:37:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:37:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:37:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:38:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:38:01] Updating...
+[2023-03-27 09:38:37] apiGetListedTokens
+[2023-03-27 09:38:37] updateTokenInfo
+[2023-03-27 09:38:37] updateCollectionInfo
+[2023-03-27 09:38:01] Last degods update was 4 minute(s) ago.
+[2023-03-27 09:38:37] Updating...
+[2023-03-27 09:38:44] apiGetListedTokens
+[2023-03-27 09:38:45] updateTokenInfo
+[2023-03-27 09:38:45] updateCollectionInfo
+[2023-03-27 09:38:01] Last t00bs update was 4 minute(s) ago.
+[2023-03-27 09:38:45] Updating...
+[2023-03-27 09:38:48] apiGetListedTokens
+[2023-03-27 09:38:48] updateTokenInfo
+[2023-03-27 09:38:48] updateCollectionInfo
+[2023-03-27 09:38:48] Finished updating. Seconds: 46.85
+[2023-03-27 09:39:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:39:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:39:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:39:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:40:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:40:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:40:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:40:01] Finished updating. Seconds: 0
+[2023-03-27 09:41:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:41:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:41:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:41:01] Finished updating. Seconds: 0
+[2023-03-27 09:42:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:42:01] Updating...
+[2023-03-27 09:42:08] apiGetListedTokens
+[2023-03-27 09:42:08] updateTokenInfo
+[2023-03-27 09:42:08] updateCollectionInfo
+[2023-03-27 09:42:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:42:08] Updating...
+[2023-03-27 09:42:15] apiGetListedTokens
+[2023-03-27 09:42:16] updateTokenInfo
+[2023-03-27 09:42:16] updateCollectionInfo
+[2023-03-27 09:42:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:42:16] Updating...
+[2023-03-27 09:42:18] apiGetListedTokens
+[2023-03-27 09:42:18] updateTokenInfo
+[2023-03-27 09:42:18] updateCollectionInfo
+[2023-03-27 09:42:18] Finished updating. Seconds: 17.25
+[2023-03-27 09:43:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:43:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:43:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:43:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:44:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:44:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:44:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:44:01] Finished updating. Seconds: 0
+[2023-03-27 09:45:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:45:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:45:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:45:01] Finished updating. Seconds: 0
+[2023-03-27 09:46:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:46:01] Updating...
+[2023-03-27 09:46:07] apiGetListedTokens
+[2023-03-27 09:46:07] updateTokenInfo
+[2023-03-27 09:46:07] updateCollectionInfo
+[2023-03-27 09:46:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:46:07] Updating...
+[2023-03-27 09:46:14] apiGetListedTokens
+[2023-03-27 09:46:14] updateTokenInfo
+[2023-03-27 09:46:14] updateCollectionInfo
+[2023-03-27 09:46:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:46:14] Updating...
+[2023-03-27 09:46:17] apiGetListedTokens
+[2023-03-27 09:46:17] updateTokenInfo
+[2023-03-27 09:46:17] updateCollectionInfo
+[2023-03-27 09:46:17] Finished updating. Seconds: 16.16
+[2023-03-27 09:47:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:47:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:47:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:47:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:48:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:48:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:48:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:48:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:49:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:49:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:49:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:49:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:50:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:50:01] Updating...
+[2023-03-27 09:50:07] apiGetListedTokens
+[2023-03-27 09:50:07] updateTokenInfo
+[2023-03-27 09:50:07] updateCollectionInfo
+[2023-03-27 09:50:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:50:07] Updating...
+[2023-03-27 09:50:14] apiGetListedTokens
+[2023-03-27 09:50:15] updateTokenInfo
+[2023-03-27 09:50:15] updateCollectionInfo
+[2023-03-27 09:50:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:50:15] Updating...
+[2023-03-27 09:50:17] apiGetListedTokens
+[2023-03-27 09:50:17] updateTokenInfo
+[2023-03-27 09:50:17] updateCollectionInfo
+[2023-03-27 09:50:17] Finished updating. Seconds: 16
+[2023-03-27 09:51:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:51:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:51:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:51:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:52:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:52:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:52:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:52:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:53:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:53:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:53:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:53:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:54:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:54:01] Updating...
+[2023-03-27 09:54:08] apiGetListedTokens
+[2023-03-27 09:54:08] updateTokenInfo
+[2023-03-27 09:54:08] updateCollectionInfo
+[2023-03-27 09:54:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:54:08] Updating...
+[2023-03-27 09:54:16] apiGetListedTokens
+[2023-03-27 09:54:16] updateTokenInfo
+[2023-03-27 09:54:16] updateCollectionInfo
+[2023-03-27 09:54:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:54:16] Updating...
+[2023-03-27 09:54:19] apiGetListedTokens
+[2023-03-27 09:54:19] updateTokenInfo
+[2023-03-27 09:54:19] updateCollectionInfo
+[2023-03-27 09:54:19] Finished updating. Seconds: 18.17
+[2023-03-27 09:55:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:55:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:55:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:55:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:56:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:56:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:56:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 09:56:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:57:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:57:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:57:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-03-27 09:57:01] Finished updating. Seconds: 0.01
+[2023-03-27 09:58:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-03-27 09:58:01] Updating...
+[2023-03-27 09:58:08] apiGetListedTokens
+[2023-03-27 09:58:08] updateTokenInfo
+[2023-03-27 09:58:08] updateCollectionInfo
+[2023-03-27 09:58:01] Last degods update was 3 minute(s) ago.
+[2023-03-27 09:58:08] Updating...
+[2023-03-27 09:58:17] apiGetListedTokens
+[2023-03-27 09:58:18] updateTokenInfo
+[2023-03-27 09:58:18] updateCollectionInfo
+[2023-03-27 09:58:01] Last t00bs update was 3 minute(s) ago.
+[2023-03-27 09:58:18] Updating...
+[2023-03-27 09:58:21] apiGetListedTokens
+[2023-03-27 09:58:21] updateTokenInfo
+[2023-03-27 09:58:21] updateCollectionInfo
+[2023-03-27 09:58:21] Finished updating. Seconds: 19.34
+[2023-03-27 09:59:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:59:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:59:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-03-27 09:59:01] Finished updating. Seconds: 0
+[2023-03-27 10:00:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-03-27 10:00:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-03-27 10:00:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-03-27 10:00:01] Finished updating. Seconds: 0.01
+Database connection error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for nftprice-db failed: No address associated with hostname[2023-05-24 09:39:01] Last abc_abracadabra update was 40 minute(s) ago.
+[2023-05-24 09:39:02] Updating...
+[2023-05-24 09:39:03] apiGetListedTokens
+[2023-05-24 09:39:03] updateTokenInfo
+[2023-05-24 09:39:03] updateCollectionInfo
+[2023-05-24 09:39:01] Last degods update was 40 minute(s) ago.
+[2023-05-24 09:39:03] Updating...
+[2023-05-24 09:39:04] apiGetListedTokens
+[2023-05-24 09:39:04] updateTokenInfo
+[2023-05-24 09:39:04] updateCollectionInfo
+[2023-05-24 09:39:01] Last t00bs update was 40 minute(s) ago.
+[2023-05-24 09:39:04] Updating...
+[2023-05-24 09:39:12] apiGetListedTokens
+[2023-05-24 09:39:12] updateTokenInfo
+[2023-05-24 09:39:12] updateCollectionInfo
+[2023-05-24 09:39:12] Finished updating. Seconds: 10.5
+[2023-05-24 09:40:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:40:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:40:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:40:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:41:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:41:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:41:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:41:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:42:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:42:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:42:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:42:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:43:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 09:43:01] Updating...
+[2023-05-24 09:43:02] apiGetListedTokens
+[2023-05-24 09:43:02] updateTokenInfo
+[2023-05-24 09:43:02] updateCollectionInfo
+[2023-05-24 09:43:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 09:43:02] Updating...
+[2023-05-24 09:43:03] apiGetListedTokens
+[2023-05-24 09:43:04] updateTokenInfo
+[2023-05-24 09:43:04] updateCollectionInfo
+[2023-05-24 09:43:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 09:43:04] Updating...
+[2023-05-24 09:43:06] apiGetListedTokens
+[2023-05-24 09:43:06] updateTokenInfo
+[2023-05-24 09:43:06] updateCollectionInfo
+[2023-05-24 09:43:06] Finished updating. Seconds: 5.01
+[2023-05-24 09:44:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:44:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:44:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:44:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:45:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:45:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:45:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:45:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:46:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:46:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:46:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:46:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:47:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 09:47:01] Updating...
+[2023-05-24 09:47:02] apiGetListedTokens
+[2023-05-24 09:47:02] updateTokenInfo
+[2023-05-24 09:47:02] updateCollectionInfo
+[2023-05-24 09:47:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 09:47:02] Updating...
+[2023-05-24 09:47:03] apiGetListedTokens
+[2023-05-24 09:47:03] updateTokenInfo
+[2023-05-24 09:47:03] updateCollectionInfo
+[2023-05-24 09:47:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 09:47:03] Updating...
+[2023-05-24 09:47:06] apiGetListedTokens
+[2023-05-24 09:47:06] updateTokenInfo
+[2023-05-24 09:47:06] updateCollectionInfo
+[2023-05-24 09:47:06] Finished updating. Seconds: 5.44
+[2023-05-24 09:48:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:48:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:48:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:48:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:49:02] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:49:02] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:49:02] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:49:02] Finished updating. Seconds: 0
+[2023-05-24 09:50:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:50:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:50:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:50:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:51:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 09:51:01] Updating...
+[2023-05-24 09:51:02] apiGetListedTokens
+[2023-05-24 09:51:02] updateTokenInfo
+[2023-05-24 09:51:02] updateCollectionInfo
+[2023-05-24 09:51:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 09:51:02] Updating...
+[2023-05-24 09:51:03] apiGetListedTokens
+[2023-05-24 09:51:03] updateTokenInfo
+[2023-05-24 09:51:03] updateCollectionInfo
+[2023-05-24 09:51:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 09:51:03] Updating...
+[2023-05-24 09:51:06] apiGetListedTokens
+[2023-05-24 09:51:06] updateTokenInfo
+[2023-05-24 09:51:06] updateCollectionInfo
+[2023-05-24 09:51:06] Finished updating. Seconds: 5.39
+[2023-05-24 09:52:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:52:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:52:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:52:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:53:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:53:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:53:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:53:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:54:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:54:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:54:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:54:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:55:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 09:55:01] Updating...
+[2023-05-24 09:55:02] apiGetListedTokens
+[2023-05-24 09:55:02] updateTokenInfo
+[2023-05-24 09:55:02] updateCollectionInfo
+[2023-05-24 09:55:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 09:55:02] Updating...
+[2023-05-24 09:55:03] apiGetListedTokens
+[2023-05-24 09:55:03] updateTokenInfo
+[2023-05-24 09:55:03] updateCollectionInfo
+[2023-05-24 09:55:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 09:55:03] Updating...
+[2023-05-24 09:55:11] apiGetListedTokens
+[2023-05-24 09:55:11] updateTokenInfo
+[2023-05-24 09:55:11] updateCollectionInfo
+[2023-05-24 09:55:11] Finished updating. Seconds: 10.17
+[2023-05-24 09:56:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:56:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:56:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 09:56:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:57:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:57:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:57:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 09:57:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:58:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:58:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:58:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 09:58:01] Finished updating. Seconds: 0.01
+[2023-05-24 09:59:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 09:59:01] Updating...
+[2023-05-24 09:59:02] apiGetListedTokens
+[2023-05-24 09:59:02] updateTokenInfo
+[2023-05-24 09:59:02] updateCollectionInfo
+[2023-05-24 09:59:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 09:59:02] Updating...
+[2023-05-24 09:59:03] apiGetListedTokens
+[2023-05-24 09:59:03] updateTokenInfo
+[2023-05-24 09:59:03] updateCollectionInfo
+[2023-05-24 09:59:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 09:59:03] Updating...
+[2023-05-24 09:59:11] apiGetListedTokens
+[2023-05-24 09:59:11] updateTokenInfo
+[2023-05-24 09:59:11] updateCollectionInfo
+[2023-05-24 09:59:11] Finished updating. Seconds: 9.8
+[2023-05-24 10:00:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:00:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:00:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:00:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:01:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:01:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:01:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:01:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:02:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:02:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:02:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:02:01] Finished updating. Seconds: 0.01
+
+Warning: file_get_contents(): php_network_getaddresses: getaddrinfo for api-mainnet.magiceden.dev failed: Temporary failure in name resolution in /var/www/html/src/Token.php on line 119
+
+Warning: file_get_contents(https://api-mainnet.magiceden.dev/v2/collections/t00bs/listings?offset=0&limit=20): Failed to open stream: php_network_getaddresses: getaddrinfo for api-mainnet.magiceden.dev failed: Temporary failure in name resolution in /var/www/html/src/Token.php on line 119
+
+Fatal error: Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in /var/www/html/src/Token.php:122
+Stack trace:
+#0 /var/www/html/src/Token.php(122): array_merge(Array, NULL)
+#1 /var/www/html/src/updateScript.php(34): Token->apiGetListedTokens('t00bs')
+#2 {main}
+  thrown in /var/www/html/src/Token.php on line 122
+[2023-05-24 10:04:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:04:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:04:01] Last t00bs update was 4 minute(s) ago.
+[2023-05-24 10:04:01] Updating...
+[2023-05-24 10:04:09] apiGetListedTokens
+[2023-05-24 10:04:09] updateTokenInfo
+[2023-05-24 10:04:09] updateCollectionInfo
+[2023-05-24 10:04:09] Finished updating. Seconds: 7.95
+[2023-05-24 10:05:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:05:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:05:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:05:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:06:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:06:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:06:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:06:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:07:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:07:01] Updating...
+[2023-05-24 10:07:02] apiGetListedTokens
+[2023-05-24 10:07:02] updateTokenInfo
+[2023-05-24 10:07:02] updateCollectionInfo
+[2023-05-24 10:07:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:07:02] Updating...
+[2023-05-24 10:07:03] apiGetListedTokens
+[2023-05-24 10:07:03] updateTokenInfo
+[2023-05-24 10:07:03] updateCollectionInfo
+[2023-05-24 10:07:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:07:03] Finished updating. Seconds: 1.97
+[2023-05-24 10:08:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:08:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:08:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:08:01] Updating...
+[2023-05-24 10:08:05] apiGetListedTokens
+[2023-05-24 10:08:05] updateTokenInfo
+[2023-05-24 10:08:05] updateCollectionInfo
+[2023-05-24 10:08:05] Finished updating. Seconds: 3.12
+[2023-05-24 10:09:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:09:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:09:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:09:01] Finished updating. Seconds: 0.02
+[2023-05-24 10:10:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:10:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:10:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:10:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:11:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:11:01] Updating...
+[2023-05-24 10:11:02] apiGetListedTokens
+[2023-05-24 10:11:02] updateTokenInfo
+[2023-05-24 10:11:02] updateCollectionInfo
+[2023-05-24 10:11:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:11:02] Updating...
+[2023-05-24 10:11:08] apiGetListedTokens
+[2023-05-24 10:11:08] updateTokenInfo
+[2023-05-24 10:11:08] updateCollectionInfo
+[2023-05-24 10:11:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:11:08] Updating...
+[2023-05-24 10:11:11] apiGetListedTokens
+[2023-05-24 10:11:11] updateTokenInfo
+[2023-05-24 10:11:11] updateCollectionInfo
+[2023-05-24 10:11:11] Finished updating. Seconds: 9.99
+[2023-05-24 10:12:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:12:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:12:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:12:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:13:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:13:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:13:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:13:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:14:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:14:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:14:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:14:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:15:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:15:01] Updating...
+[2023-05-24 10:15:01] apiGetListedTokens
+[2023-05-24 10:15:01] updateTokenInfo
+[2023-05-24 10:15:01] updateCollectionInfo
+[2023-05-24 10:15:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:15:01] Updating...
+[2023-05-24 10:15:03] apiGetListedTokens
+[2023-05-24 10:15:03] updateTokenInfo
+[2023-05-24 10:15:03] updateCollectionInfo
+[2023-05-24 10:15:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:15:03] Updating...
+[2023-05-24 10:15:06] apiGetListedTokens
+[2023-05-24 10:15:06] updateTokenInfo
+[2023-05-24 10:15:06] updateCollectionInfo
+[2023-05-24 10:15:06] Finished updating. Seconds: 5.09
+[2023-05-24 10:16:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:16:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:16:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:16:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:17:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:17:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:17:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:17:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:18:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:18:01] Updating...
+[2023-05-24 10:18:02] apiGetListedTokens
+[2023-05-24 10:18:02] updateTokenInfo
+[2023-05-24 10:18:02] updateCollectionInfo
+[2023-05-24 10:18:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:18:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:18:02] Finished updating. Seconds: 0.96
+[2023-05-24 10:19:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:19:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:19:01] Updating...
+[2023-05-24 10:19:02] apiGetListedTokens
+[2023-05-24 10:19:02] updateTokenInfo
+[2023-05-24 10:19:02] updateCollectionInfo
+[2023-05-24 10:19:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:19:02] Updating...
+[2023-05-24 10:19:15] apiGetListedTokens
+[2023-05-24 10:19:15] updateTokenInfo
+[2023-05-24 10:19:15] updateCollectionInfo
+[2023-05-24 10:19:15] Finished updating. Seconds: 13.96
+[2023-05-24 10:20:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:20:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:20:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:20:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:21:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:21:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:21:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:21:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:22:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:22:01] Updating...
+[2023-05-24 10:22:02] apiGetListedTokens
+[2023-05-24 10:22:02] updateTokenInfo
+[2023-05-24 10:22:02] updateCollectionInfo
+[2023-05-24 10:22:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:22:02] Updating...
+[2023-05-24 10:22:04] apiGetListedTokens
+[2023-05-24 10:22:04] updateTokenInfo
+[2023-05-24 10:22:04] updateCollectionInfo
+[2023-05-24 10:22:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:22:04] Finished updating. Seconds: 2.34
+[2023-05-24 10:23:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:23:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:23:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:23:01] Updating...
+[2023-05-24 10:23:04] apiGetListedTokens
+[2023-05-24 10:23:04] updateTokenInfo
+[2023-05-24 10:23:04] updateCollectionInfo
+[2023-05-24 10:23:04] Finished updating. Seconds: 2.79
+[2023-05-24 10:24:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:24:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:24:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:24:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:25:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:25:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:25:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:25:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:26:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:26:01] Updating...
+[2023-05-24 10:26:02] apiGetListedTokens
+[2023-05-24 10:26:02] updateTokenInfo
+[2023-05-24 10:26:02] updateCollectionInfo
+[2023-05-24 10:26:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:26:02] Updating...
+[2023-05-24 10:26:03] apiGetListedTokens
+[2023-05-24 10:26:04] updateTokenInfo
+[2023-05-24 10:26:04] updateCollectionInfo
+[2023-05-24 10:26:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:26:04] Updating...
+[2023-05-24 10:26:11] apiGetListedTokens
+[2023-05-24 10:26:11] updateTokenInfo
+[2023-05-24 10:26:11] updateCollectionInfo
+[2023-05-24 10:26:11] Finished updating. Seconds: 10.27
+[2023-05-24 10:27:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:27:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:27:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:27:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:28:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:28:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:28:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:28:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:29:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:29:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:29:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:29:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:30:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:30:01] Updating...
+[2023-05-24 10:30:02] apiGetListedTokens
+[2023-05-24 10:30:02] updateTokenInfo
+[2023-05-24 10:30:02] updateCollectionInfo
+[2023-05-24 10:30:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:30:02] Updating...
+[2023-05-24 10:30:03] apiGetListedTokens
+[2023-05-24 10:30:03] updateTokenInfo
+[2023-05-24 10:30:03] updateCollectionInfo
+[2023-05-24 10:30:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:30:03] Updating...
+[2023-05-24 10:30:06] apiGetListedTokens
+[2023-05-24 10:30:06] updateTokenInfo
+[2023-05-24 10:30:06] updateCollectionInfo
+[2023-05-24 10:30:06] Finished updating. Seconds: 5.39
+[2023-05-24 10:31:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:31:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:31:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:31:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:32:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:32:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:32:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:32:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:33:02] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:33:02] Updating...
+[2023-05-24 10:33:42] apiGetListedTokens
+[2023-05-24 10:33:42] updateTokenInfo
+[2023-05-24 10:33:43] updateCollectionInfo
+[2023-05-24 10:33:02] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:33:43] Updating...
+[2023-05-24 10:33:43] apiGetListedTokens
+[2023-05-24 10:33:44] updateTokenInfo
+[2023-05-24 10:33:44] updateCollectionInfo
+[2023-05-24 10:33:02] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:33:44] Updating...
+[2023-05-24 10:33:46] apiGetListedTokens
+[2023-05-24 10:33:46] updateTokenInfo
+[2023-05-24 10:33:46] updateCollectionInfo
+[2023-05-24 10:33:46] Finished updating. Seconds: 44.74
+[2023-05-24 10:34:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:34:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:34:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:34:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:35:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:35:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:35:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:35:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:36:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:36:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:36:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:36:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:37:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:37:01] Updating...
+[2023-05-24 10:37:02] apiGetListedTokens
+[2023-05-24 10:37:02] updateTokenInfo
+[2023-05-24 10:37:02] updateCollectionInfo
+[2023-05-24 10:37:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:37:02] Updating...
+[2023-05-24 10:37:03] apiGetListedTokens
+[2023-05-24 10:37:03] updateTokenInfo
+[2023-05-24 10:37:03] updateCollectionInfo
+[2023-05-24 10:37:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:37:03] Updating...
+[2023-05-24 10:37:16] apiGetListedTokens
+[2023-05-24 10:37:16] updateTokenInfo
+[2023-05-24 10:37:16] updateCollectionInfo
+[2023-05-24 10:37:16] Finished updating. Seconds: 15.46
+[2023-05-24 10:38:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:38:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:38:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:38:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:39:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:39:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:39:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:39:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:40:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:40:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:40:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:40:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:41:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:41:01] Updating...
+[2023-05-24 10:41:02] apiGetListedTokens
+[2023-05-24 10:41:02] updateTokenInfo
+[2023-05-24 10:41:02] updateCollectionInfo
+[2023-05-24 10:41:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:41:02] Updating...
+[2023-05-24 10:41:03] apiGetListedTokens
+[2023-05-24 10:41:03] updateTokenInfo
+[2023-05-24 10:41:03] updateCollectionInfo
+[2023-05-24 10:41:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:41:03] Updating...
+[2023-05-24 10:41:11] apiGetListedTokens
+[2023-05-24 10:41:11] updateTokenInfo
+[2023-05-24 10:41:11] updateCollectionInfo
+[2023-05-24 10:41:11] Finished updating. Seconds: 9.96
+[2023-05-24 10:42:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:42:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:42:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:42:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:43:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:43:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:43:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:43:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:44:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:44:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:44:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:44:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:45:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:45:01] Updating...
+[2023-05-24 10:45:02] apiGetListedTokens
+[2023-05-24 10:45:02] updateTokenInfo
+[2023-05-24 10:45:02] updateCollectionInfo
+[2023-05-24 10:45:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:45:02] Updating...
+[2023-05-24 10:45:03] apiGetListedTokens
+[2023-05-24 10:45:03] updateTokenInfo
+[2023-05-24 10:45:03] updateCollectionInfo
+[2023-05-24 10:45:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:45:03] Updating...
+[2023-05-24 10:45:22] apiGetListedTokens
+[2023-05-24 10:45:22] updateTokenInfo
+[2023-05-24 10:45:22] updateCollectionInfo
+[2023-05-24 10:45:22] Finished updating. Seconds: 20.61
+[2023-05-24 10:46:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:46:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:46:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:46:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:47:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:47:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:47:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:47:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:48:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:48:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:48:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:48:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:49:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:49:01] Updating...
+[2023-05-24 10:49:03] apiGetListedTokens
+[2023-05-24 10:49:03] updateTokenInfo
+[2023-05-24 10:49:03] updateCollectionInfo
+[2023-05-24 10:49:01] Last degods update was 4 minute(s) ago.
+[2023-05-24 10:49:03] Updating...
+[2023-05-24 10:49:04] apiGetListedTokens
+[2023-05-24 10:49:04] updateTokenInfo
+[2023-05-24 10:49:04] updateCollectionInfo
+[2023-05-24 10:49:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:49:04] Updating...
+[2023-05-24 10:49:07] apiGetListedTokens
+[2023-05-24 10:49:07] updateTokenInfo
+[2023-05-24 10:49:07] updateCollectionInfo
+[2023-05-24 10:49:07] Finished updating. Seconds: 5.64
+[2023-05-24 10:50:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:50:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:50:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:50:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:51:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:51:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:51:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:51:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:52:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:52:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:52:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:52:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:53:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:53:01] Updating...
+[2023-05-24 10:53:02] apiGetListedTokens
+[2023-05-24 10:53:02] updateTokenInfo
+[2023-05-24 10:53:02] updateCollectionInfo
+[2023-05-24 10:53:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:53:02] Updating...
+[2023-05-24 10:53:03] apiGetListedTokens
+[2023-05-24 10:53:03] updateTokenInfo
+[2023-05-24 10:53:03] updateCollectionInfo
+[2023-05-24 10:53:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:53:03] Updating...
+[2023-05-24 10:53:21] apiGetListedTokens
+[2023-05-24 10:53:21] updateTokenInfo
+[2023-05-24 10:53:21] updateCollectionInfo
+[2023-05-24 10:53:21] Finished updating. Seconds: 20.01
+[2023-05-24 10:54:02] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:54:02] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:54:02] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:54:02] Finished updating. Seconds: 0.01
+[2023-05-24 10:55:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:55:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:55:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:55:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:56:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:56:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:56:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 10:56:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:57:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 10:57:01] Updating...
+[2023-05-24 10:57:02] apiGetListedTokens
+[2023-05-24 10:57:02] updateTokenInfo
+[2023-05-24 10:57:02] updateCollectionInfo
+[2023-05-24 10:57:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 10:57:02] Updating...
+[2023-05-24 10:57:03] apiGetListedTokens
+[2023-05-24 10:57:03] updateTokenInfo
+[2023-05-24 10:57:03] updateCollectionInfo
+[2023-05-24 10:57:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 10:57:03] Updating...
+[2023-05-24 10:57:17] apiGetListedTokens
+[2023-05-24 10:57:17] updateTokenInfo
+[2023-05-24 10:57:17] updateCollectionInfo
+[2023-05-24 10:57:17] Finished updating. Seconds: 15.62
+[2023-05-24 10:58:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:58:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:58:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 10:58:01] Finished updating. Seconds: 0.01
+[2023-05-24 10:59:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:59:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:59:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 10:59:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:00:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:00:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:00:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:00:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:01:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 11:01:01] Updating...
+[2023-05-24 11:01:02] apiGetListedTokens
+[2023-05-24 11:01:02] updateTokenInfo
+[2023-05-24 11:01:02] updateCollectionInfo
+[2023-05-24 11:01:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 11:01:02] Updating...
+[2023-05-24 11:01:03] apiGetListedTokens
+[2023-05-24 11:01:03] updateTokenInfo
+[2023-05-24 11:01:03] updateCollectionInfo
+[2023-05-24 11:01:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 11:01:03] Updating...
+[2023-05-24 11:01:18] apiGetListedTokens
+[2023-05-24 11:01:18] updateTokenInfo
+[2023-05-24 11:01:18] updateCollectionInfo
+[2023-05-24 11:01:18] Finished updating. Seconds: 17.31
+[2023-05-24 11:02:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:02:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:02:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:02:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:03:02] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:03:02] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:03:02] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:03:02] Finished updating. Seconds: 0.01
+[2023-05-24 11:04:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:04:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:04:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:04:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:05:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 11:05:01] Updating...
+[2023-05-24 11:05:02] apiGetListedTokens
+[2023-05-24 11:05:02] updateTokenInfo
+[2023-05-24 11:05:02] updateCollectionInfo
+[2023-05-24 11:05:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 11:05:02] Updating...
+[2023-05-24 11:05:03] apiGetListedTokens
+[2023-05-24 11:05:03] updateTokenInfo
+[2023-05-24 11:05:03] updateCollectionInfo
+[2023-05-24 11:05:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 11:05:03] Updating...
+[2023-05-24 11:05:06] apiGetListedTokens
+[2023-05-24 11:05:06] updateTokenInfo
+[2023-05-24 11:05:06] updateCollectionInfo
+[2023-05-24 11:05:06] Finished updating. Seconds: 5.52
+[2023-05-24 11:06:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:06:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:06:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:06:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:07:02] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:07:02] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:07:02] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:07:02] Finished updating. Seconds: 0.01
+[2023-05-24 11:08:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:08:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:08:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:08:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:09:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 11:09:01] Updating...
+[2023-05-24 11:09:02] apiGetListedTokens
+[2023-05-24 11:09:02] updateTokenInfo
+[2023-05-24 11:09:02] updateCollectionInfo
+[2023-05-24 11:09:01] Last degods update was 3 minute(s) ago.
+[2023-05-24 11:09:02] Updating...
+[2023-05-24 11:09:03] apiGetListedTokens
+[2023-05-24 11:09:03] updateTokenInfo
+[2023-05-24 11:09:03] updateCollectionInfo
+[2023-05-24 11:09:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 11:09:03] Updating...
+[2023-05-24 11:09:06] apiGetListedTokens
+[2023-05-24 11:09:06] updateTokenInfo
+[2023-05-24 11:09:06] updateCollectionInfo
+[2023-05-24 11:09:06] Finished updating. Seconds: 4.97
+[2023-05-24 11:10:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:10:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:10:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:10:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:11:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:11:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:11:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:11:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:12:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:12:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:12:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:12:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:13:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 11:13:01] Updating...
+[2023-05-24 11:13:12] apiGetListedTokens
+[2023-05-24 11:13:12] updateTokenInfo
+[2023-05-24 11:13:12] updateCollectionInfo
+[2023-05-24 11:13:01] Last degods update was 4 minute(s) ago.
+[2023-05-24 11:13:12] Updating...
+[2023-05-24 11:13:13] apiGetListedTokens
+[2023-05-24 11:13:13] updateTokenInfo
+[2023-05-24 11:13:13] updateCollectionInfo
+[2023-05-24 11:13:01] Last t00bs update was 4 minute(s) ago.
+[2023-05-24 11:13:13] Updating...
+[2023-05-24 11:13:16] apiGetListedTokens
+[2023-05-24 11:13:16] updateTokenInfo
+[2023-05-24 11:13:16] updateCollectionInfo
+[2023-05-24 11:13:16] Finished updating. Seconds: 14.9
+[2023-05-24 11:14:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:14:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:14:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:14:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:15:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:15:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:15:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:15:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:16:02] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:16:02] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:16:02] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:16:02] Finished updating. Seconds: 0.01
+
+Warning: file_get_contents(): php_network_getaddresses: getaddrinfo for api-mainnet.magiceden.dev failed: Temporary failure in name resolution in /var/www/html/src/Token.php on line 119
+
+Warning: file_get_contents(https://api-mainnet.magiceden.dev/v2/collections/t00bs/listings?offset=40&limit=20): Failed to open stream: php_network_getaddresses: getaddrinfo for api-mainnet.magiceden.dev failed: Temporary failure in name resolution in /var/www/html/src/Token.php on line 119
+
+Fatal error: Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in /var/www/html/src/Token.php:122
+Stack trace:
+#0 /var/www/html/src/Token.php(122): array_merge(Array, NULL)
+#1 /var/www/html/src/updateScript.php(34): Token->apiGetListedTokens('t00bs')
+#2 {main}
+  thrown in /var/www/html/src/Token.php on line 122
+[2023-05-24 11:18:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:18:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:18:01] Last t00bs update was 4 minute(s) ago.
+[2023-05-24 11:18:01] Updating...
+[2023-05-24 11:18:04] apiGetListedTokens
+[2023-05-24 11:18:04] updateTokenInfo
+[2023-05-24 11:18:04] updateCollectionInfo
+[2023-05-24 11:18:04] Finished updating. Seconds: 2.97
+[2023-05-24 11:19:01] Last abc_abracadabra update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:19:01] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:19:01] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:19:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:20:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:20:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:20:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:20:01] Finished updating. Seconds: 0.01
+[2023-05-24 11:21:01] Last abc_abracadabra update was 3 minute(s) ago.
+[2023-05-24 11:21:01] Updating...
+[2023-05-24 11:21:02] apiGetListedTokens
+[2023-05-24 11:21:02] updateTokenInfo
+[2023-05-24 11:21:02] updateCollectionInfo
+[2023-05-24 11:21:01] Last degods update was 4 minute(s) ago.
+[2023-05-24 11:21:02] Updating...
+[2023-05-24 11:21:03] apiGetListedTokens
+[2023-05-24 11:21:03] updateTokenInfo
+[2023-05-24 11:21:03] updateCollectionInfo
+[2023-05-24 11:21:01] Last t00bs update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:21:03] Finished updating. Seconds: 2.05
+[2023-05-24 11:22:01] Last abc_abracadabra update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:22:01] Last degods update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:22:01] Last t00bs update was 3 minute(s) ago.
+[2023-05-24 11:22:01] Updating...
+[2023-05-24 11:22:09] apiGetListedTokens
+[2023-05-24 11:22:09] updateTokenInfo
+[2023-05-24 11:22:09] updateCollectionInfo
+[2023-05-24 11:22:09] Finished updating. Seconds: 8.4
+[2023-05-24 11:23:02] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:23:02] Last degods update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:23:02] Last t00bs update was 0 minute(s) ago.
+Not updating
+[2023-05-24 11:23:02] Finished updating. Seconds: 0.01
+[2023-05-24 11:24:01] Last abc_abracadabra update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:24:01] Last degods update was 2 minute(s) ago.
+Not updating
+[2023-05-24 11:24:01] Last t00bs update was 1 minute(s) ago.
+Not updating
+[2023-05-24 11:24:01] Finished updating. Seconds: 0.01

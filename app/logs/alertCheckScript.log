@@ -4,3 +4,4 @@
 [2023-03-22 12:51:13] Sent message to 1307787893 - DeGod #6226 | Price set:800 - token price: 700
 [2023-03-22 12:56:13] Sent message to 1307787893 - DeGod #3475 | Price set:900 - token price: 596.9999
 [2023-03-22 01:08:12] Sent message to 1307787893 - DeGod #3475 | Price set:870 - token price: 596.9999
+Database connection error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for nftprice-db failed: No address associated with hostname
