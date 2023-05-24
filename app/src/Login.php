@@ -8,7 +8,7 @@ class Login{
     private $logged_in = false;
     private $creation_date;
     private $last_login;
-    private $role = 'user';
+    private $role;
 
     public $register_success = false;
     public $errors = array();

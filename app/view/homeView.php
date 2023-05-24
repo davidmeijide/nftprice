@@ -325,7 +325,7 @@ function showTemplates()
                 </div>
                 <div id="attribute-group-container" class="mb-2 mr-sm-2">
                     <h5 id="att-title" class="mb-4">Attributes</h5>
-                    <div class="attribute-group"></div>
+                    <div id="attribute-group"></div>
                     <div class="d-flex justify-content-between">
                         <a id="remove-attribute" href="#att-title" class="text-decoration-none mt-2 text-danger">
                             <i class="icon-container">
