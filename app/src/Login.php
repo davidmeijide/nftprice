@@ -31,7 +31,7 @@ class Login{
             $connection = new Connection();
 
             //Check if user exists
-            $pdoStatement = $connection->prepare("SELECT username, password FROM users
+            $pdoStatement = $connection->prepare("SELECT username, role, password FROM users
                                         WHERE username LIKE :username");
             $pdoStatement->bindParam(':username',$this->username);
             $pdoStatement->execute();
@@ -50,6 +50,7 @@ class Login{
                 $this->last_login = date("Y-m-d H:i:s");
                 //Insert last login date pending
                 $_SESSION['username'] = $this->username;
+                $_SESSION['role'] = $result['role'];
                 session_regenerate_id(true);
                 return true;
             } 

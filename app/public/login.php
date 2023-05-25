@@ -1,4 +1,6 @@
 <?php
+include_once('../view/footerView.php');
+include_once('../view/homeView.php');
 @session_start();
 if(isset($_SESSION['username'])){
     header('Location: /home');
@@ -26,6 +28,9 @@ if(isset($_SESSION['username'])){
         <p class="">Not registered? <a class="ml-2" href="/register">Register</a></p>
     </form>
     </div>
+    <?php
+    showFooter();
+    ?>
 </body>
 
 </html>

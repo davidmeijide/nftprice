@@ -1,4 +1,6 @@
 <?php
+include_once('../view/footerView.php');
+include_once('../view/homeView.php');
 @session_start();
 if(isset($_SESSION['username'])){
     header('Location: /home');
@@ -37,5 +39,8 @@ if(isset($_SESSION['username'])){
         </form>   
 
     </div>
+    <?php
+    showFooter();
+    ?>
 </body>
 </html>
