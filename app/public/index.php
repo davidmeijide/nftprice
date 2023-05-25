@@ -1,5 +1,6 @@
 <?php
 include_once('../view/footerView.php');
+include_once('../view/homeView.php');
 @session_start();
 if(isset($_SESSION['username'])){
     header('Location: /home');
@@ -8,14 +9,9 @@ if(isset($_SESSION['username'])){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFTprice</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <?php
+    showHeadIndex();
+    ?>
 <body>
     <header class="d-flex justify-content-between p-1 align-items-center bg-light border border-dark">
         <a class="text-decoration-none text text-dark"  href="/index"><h1>NFTprice</h1></a>
